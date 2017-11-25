@@ -1,0 +1,188 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\sch-29030.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify)
+    (DRC_Scope "0")
+    (DRC_Action "0")
+    (DRC_Create_Warnings "FALSE")
+    (DRC_View_Output "FALSE")
+    (DRC_Preserved_Waived "FALSE")
+    (DRC_Run_Electrical_Rules "TRUE")
+    (DRC_Run_Physical_Rules "TRUE")
+    (DRC_Report_File "E:\EDABUFFER\DEVKIT-MPC5748G\SCH-29030.DRC")
+    (DRC_Check_Ports "TRUE")
+    (DRC_Check_Off-Page_Connectors "TRUE")
+    (DRC_Report_Ports_and_Off-page_Connectors "TRUE")
+    (DRC_SDT_Compatibility "FALSE")
+    (DRC_Report_Off-grid_Objects "TRUE")
+    (DRC_Check_Unconnected_Nets "TRUE")
+    (DRC_Check_for_Misleading_TAP "TRUE")
+    (DRC_Report_Netnames "TRUE")
+    (DRC_Check_Single_Node_Nets "TRUE")
+    (DRC_Run_Electrical_Custom_DRC "FALSE")
+    (DRC_Check_No_Driving_Source "TRUE")
+    (DRC_Check_Duplicate_NetNames "TRUE")
+    (DRC_Check_Floating_Pins "TRUE")
+    (DRC_Check_Physical_Power_Pins_Visibility "TRUE")
+    (DRC_Check_PCB_Footprint_Property "TRUE")
+    (DRC_Check_Normal_Convert_View_Sync "TRUE")
+    (DRC_Check_Incorrect_PinGroup_Assignment "TRUE")
+    (DRC_Check_High_Speed_Props_Syntax "TRUE")
+    (DRC_Check_Missing_Pin_Numbers "TRUE")
+    (DRC_Check_Device_With_No_Pins "TRUE")
+    (DRC_Check_Power_Ground_Short "TRUE")
+    (DRC_Identical_References "TRUE")
+    (DRC_Type_Mismatch "TRUE")
+    (DRC_Visible_Power_pins "TRUE")
+    (DRC_Report_Unused_Part_Packages "TRUE")
+    (DRC_Check_Name_Prop_For_HierBlocks "TRUE")
+    (DRC_Run_Physical_Custom_DRC "FALSE")
+    (BOM_Scope "0")
+    (BOM_Mode "0")
+    (BOM_Report_File "E:\EDABUFFER\DEVKIT-MPC5748G\SCH-29030.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0
+       "{Item}\t{Quantity}\t{AGILE_PN}\t{ASSY_OPT}\t{}\t{PRE_APN}\t{Reference}")
+    (BOM_Header "Item\tQuantity\tAgilePN\tASSY_OPT\tFIND#\tPRE_APN\tReference")
+    (BOM_Include_File "E:\EDABUFFER\DEVKIT-MPC5748G\SCH-29030.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "FALSE")
+    (BOM_View_Output "FALSE")
+    (Netlist_TAB "0"))
+  (Folder "Outputs"
+    (File ".\sch-29030.drc"
+      (Type "Report"))
+    (File ".\sch-29030.bom"
+      (Type "Report"))
+    (File ".\allegro\pstxnet.dat"
+      (Type "Report")
+      (DisplayName "pstxnet.dat"))
+    (File ".\allegro\pstxprt.dat"
+      (Type "Report")
+      (DisplayName "pstxprt.dat"))
+    (File ".\allegro\pstchip.dat"
+      (Type "Report")
+      (DisplayName "pstchip.dat")))
+  (Folder "Referenced Projects")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\sch-29030.dsn")
+      (Path "Design Resources" ".\sch-29030.dsn" "Main EVB")
+      (Path "Outputs")
+      (Select "Design Resources" ".\sch-29030.dsn" "Main EVB" "08 - MCU GPIO 2"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 229"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 100 1628 100 610")
+        (Scroll "0 39")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\HALL\VAE1701A01\新板\新建文件夹 (2)\SCH-29030\SCH-29030.DSN")
+      (Schematic "Main EVB")
+      (Page "05 - Reset Control and JTAG"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 175 1703 175 685")
+        (Scroll "679 754")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\HALL\VAE1701A01\新板\新建文件夹 (2)\SCH-29030\SCH-29030.DSN")
+      (Schematic "Main EVB")
+      (Page "07 - MCU GPIO 1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 100 1703 100 478")
+        (Scroll "253 663")
+        (Zoom "148")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\HALL\VAE1701A01\新板\新建文件夹 (2)\SCH-29030\SCH-29030.DSN")
+      (Schematic "Main EVB")
+      (Page "15 - GPIO Connectors"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 75 1603 75 585")
+        (Scroll "0 140")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\HALL\VAE1701A01\新板\新建文件夹 (2)\SCH-29030\SCH-29030.DSN")
+      (Schematic "Main EVB")
+      (Page "09 - Comms 1 (CAN & LIN)"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 150 1753 150 528")
+        (Scroll "-17 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\HALL\VAE1701A01\新板\新建文件夹 (2)\SCH-29030\SCH-29030.DSN")
+      (Schematic "Main EVB")
+      (Page "13 - Comms 5 (FlexRAY)"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 1603 0 408")
+        (Scroll "264 454")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\HALL\VAE1701A01\新板\新建文件夹 (2)\SCH-29030\SCH-29030.DSN")
+      (Schematic "Main EVB")
+      (Page "12 - Comms 4 (Ethernet)"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 200 1728 200 710")
+        (Scroll "507 620")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\HALL\VAE1701A01\新板\新建文件夹 (2)\SCH-29030\SCH-29030.DSN")
+      (Schematic "Main EVB")
+      (Page "10 - Comms 2 (OpenSDA)"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 225 1753 225 735")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\HALL\VAE1701A01\新板\新建文件夹 (2)\SCH-29030\SCH-29030.DSN")
+      (Schematic "Main EVB")
+      (Page "14 - User Peripherals"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 200 1728 200 710")
+        (Scroll "646 24")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\HALL\VAE1701A01\新板\新建文件夹 (2)\SCH-29030\SCH-29030.DSN")
+      (Schematic "Main EVB")
+      (Page "08 - MCU GPIO 2")))
+  (ISPCBBASICLICENSE "false")
+  (MPSSessionName "Administrator"))

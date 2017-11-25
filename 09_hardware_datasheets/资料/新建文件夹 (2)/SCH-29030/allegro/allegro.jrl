@@ -1,0 +1,21 @@
+\t (00:00:03) allegro 16.6 P004 (v16-6-112G) Windows 32
+\t (00:00:03)     Journal start - Fri Nov 10 17:23:24 2017
+\t (00:00:03)         Host=MS-20171016RYIR User=Administrator Pid=6288 CPUs=4
+\t (00:00:03) 
+\t (00:00:05) Starting new design...
+\i (00:00:05) trapsize 943
+\i (00:00:05) trapsize 919
+\i (00:00:05) trapsize 948
+\i (00:00:05) trapsize 775
+\i (00:00:05) trapsize 1523
+\i (00:00:06) generaledit 
+\i (00:00:10) open 
+\i (00:00:18) fillin "C:\Users\Administrator\Desktop\LAY-29030\LAY-29030.brd"
+\i (00:00:18) cd "C:\Users\Administrator\Desktop\LAY-29030"
+\t (00:00:18) Opening existing design...
+\w (00:00:18) WARNING(SPMHDB-214): Allegro PCB Designer (was Performance L) opening an Allegro Editor {High-Speed Miniaturization} design.
+\w (00:00:18) WARNING(SPMHDB-213): DRC set to "out of date". This product supports a different DRC set than last product used on drawing.
+\w (00:00:18) WARNING(SPMHOD-33): Design was last saved by a different product (Allegro Editor {High-Speed Miniaturization}). Constraints and other design data may not be available with this product. Functionality between two products may also be equivalent, you should consult the product functionality matrix to determine differences.
+\i (00:00:18) fillin confirm
+\i (00:00:19) trapsize 26971
+\t (00:00:19)     Journal end - Fri Nov 10 17:23:39 2017
