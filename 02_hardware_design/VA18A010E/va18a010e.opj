@@ -48,30 +48,55 @@
     (File ".\va18a010e.csv"
       (Type "Report")))
   (Folder "Referenced Projects")
-  (PartMRUSelector)
+  (PartMRUSelector
+    (OFFPAGELEFT-L
+      (LibraryName "D:\CADENCE\SPB 16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0")))
   (GlobalState
     (FileView
       (Path "Design Resources")
       (Path "Design Resources" ".\va18a010e.dsn")
       (Path "Design Resources" ".\va18a010e.dsn" "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources"))
+      (Select "Design Resources" ".\va18a010e.dsn" "SCHEMATIC1" "02 - Notes"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 392"))
+        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 392"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 50 1611 50 591")
+        (Placement "44 2 3 -1 -1 -8 -30 50 1611 50 591")
+        (Scroll "-395 -7")
+        (Zoom "49")
+        (Occurrence "/"))
+      (Path
+         "D:\PROJECTS\RADAR\RADAR_OE_EE\02_HARDWARE_DESIGN\VA18A010E\VA18A010E.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "01 - TITLE, TOC & REV"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 125 1686 125 666")
         (Scroll "-251 0")
         (Zoom "50")
         (Occurrence "/"))
       (Path
          "D:\PROJECTS\RADAR\RADAR_OE_EE\02_HARDWARE_DESIGN\VA18A010E\VA18A010E.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "01 - TITLE, TOC & REV")))
+      (Page "03 - Regulation"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 150 1711 150 691")
+        (Scroll "100 366")
+        (Zoom "98")
+        (Occurrence "/"))
+      (Path
+         "D:\PROJECTS\RADAR\RADAR_OE_EE\02_HARDWARE_DESIGN\VA18A010E\VA18A010E.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "02 - Notes")))
   (ISPCBBASICLICENSE "false")
   (MPSSessionName "Administrator"))
