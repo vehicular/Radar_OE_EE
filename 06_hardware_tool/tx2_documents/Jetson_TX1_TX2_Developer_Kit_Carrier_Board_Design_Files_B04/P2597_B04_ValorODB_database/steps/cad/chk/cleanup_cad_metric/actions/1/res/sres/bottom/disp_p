@@ -1,0 +1,7 @@
+DISPLAY {
+    L0 = bottom
+}
+DISPLAY {
+    L0 = bottom
+    L1 = drill
+}

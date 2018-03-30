@@ -1,19 +1,19 @@
 (PCB VA18A010E
  (description
-  (timeStamp "2018 03 15 09 43 12")
+  (timeStamp "2018 03 21 09 29 35")
   (program "CAPTURE.EXE" (Version "16.6.0.d001"))
   (source "Original data from OrCAD/CAPTURE schematic")
-  (title "")
-  (date "March 15, 2018")
-  (document "D:\\PROJECTS\\RADAR\\RADAR_OE_EE\\02_HARDWARE_DESIGN\\VA18A010E\\VA18A010E.DSN")
-  (revision "")
-  (organization "")
-  (address1 "")
-  (address2 "")
+  (title "77GHz_RADAR")
+  (date "Wednesday, March 21, 2018")
+  (document "VA18A010E PDF: VA18A010E")
+  (revision "01")
+  (organization "Freescale Semiconductor")
+  (address1 "6501 William Cannon Drive West")
+  (address2 "Austin, TX 78735-8598")
   (address3 "")
   (address4 "")
   (partvaluecombine "{Value}")
-  (pcbfootprintcombine "{PCB Footprint}"))
+  (pcbfootprintcombine "{PCB Footprint},{Value}"))
  (structure )
  (placement
   (component DIODE_SCH_227A
@@ -24,9 +24,9 @@
      (DESCRIPTION "DIODE SCH 8A 30V TO-277A")
      (timestamp 00850839)
      (HEIGHT 1.2MM)
-     (MFG_NAME01 "VISHAY INTERTECHNOLOGY")
-     (ROHS Yes)
      (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "VISHAY INTERTECHNOLOGY")
      ("Source Package" DIODE_SCH_227A)
      (AGILE_PN "480-77943")
      (MFG_PN01 "SS8P3L-M3/86A")
@@ -39,9 +39,9 @@
      (DESCRIPTION "CON 2X30 PLUG SMT 0.5MM SP 289H AU")
      (timestamp 00F68F72)
      (HEIGHT "7.34 MM")
-     (MFG_NAME01 SAMTEC)
-     (ROHS Yes)
      (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 SAMTEC)
      ("Source Package" "QTH-030-02-L-D-A_0")
      (AGILE_PN "211-79854")
      (MFG_PN01 "QTH-030-02-L-D-A-K-TR")
@@ -69,9 +69,9 @@
      (DESCRIPTION "TRAN PJFET -- TSOP-6 ROHS")
      (timestamp 008507F5)
      (HEIGHT 1.10MM)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "INTERNATIONAL RECTIFIER")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
      ("Source Package" MOSFET_P_S1_D4)
      (AGILE_PN "480-75207")
      (MFG_PN01 SI3443DVTRPBF)
@@ -111,71 +111,33 @@
      (TOL 20%)
      (MFG_PN01 "XAL4030-472ME")
      (Value "ACT45B-510-2P-TL"))))
-  (component R0402
-   (place R11
+  (component LP5912_3P3_TRANS_0
+   (place U13
     (property 
-     (Prop "1/16W 5%")
-     ("PCB Footprint" R0402)
-     (Price 0.005)
-     (timestamp 0106B15B)
-     ("Source Package" R0402)
-     (Value 56KF)))
-   (place R12
-    (property 
-     (Prop "1/16W 5%")
-     ("PCB Footprint" R0402)
-     (Price 0.005)
-     (timestamp 01067B91)
-     ("Source Package" R0402)
-     (Value 82.5KF)))
-   (place R13
-    (property 
-     (Prop "1/16W 5%")
-     ("PCB Footprint" R0402)
-     (Price 0.005)
-     (timestamp 010723DF)
-     ("Source Package" R0402)
-     (Value 10K)))
-   (place R14
-    (property 
-     (Prop "1/16W 5%")
-     ("PCB Footprint" R0402)
-     (Price 0.005)
-     (timestamp 01072409)
-     ("Source Package" R0402)
-     (Value 10K)))
-   (place R15
-    (property 
-     (Prop "1/16W 5%")
-     ("PCB Footprint" R0402)
-     (Price 0.005)
-     (timestamp 0106B134)
-     ("Source Package" R0402)
-     (Value 12KF)))
-   (place R16
-    (property 
-     (Prop "1/16W 5%")
-     ("PCB Footprint" R0402)
-     (Price 0.005)
-     (timestamp 01067B66)
-     ("Source Package" R0402)
-     (Value 11.3KF)))
-   (place R17
-    (property 
-     (Prop "1/16W 5%")
-     ("PCB Footprint" R0402)
-     (Price 0.005)
-     (timestamp 01088775)
-     ("Source Package" R0402)
-     (Value 1KF)))
-   (place R19
-    (property 
-     (Prop "1/16W 5%")
-     ("PCB Footprint" R0402)
-     (Price 0.005)
-     (timestamp 01088784)
-     ("Source Package" R0402)
-     (Value 1KF))))
+     (PackageName "LP5912-0.9DRVT")
+     (DevicesInPackage 1)
+     (PIN_COUNT 7)
+     (CompType IC)
+     (PackageReference DRV0006A)
+     ("< Value >" "LP5912-0.9DRVT")
+     (OriginalSymbolOrigin "(-50000,50000)")
+     ("PCB Footprint" DRV0006A)
+     (PSpiceTemplate "X^@REFDES %IN %EN %NC %OUT %PG %PAD %GND @MODEL")
+     (timestamp 010B9FF6)
+     (DeviceNumbering Alpha)
+     (RoHS Y)
+     (IsHeterogeneous False)
+     (Application_BuildNumber *)
+     ("Source Package" LP5912_3P3_TRANS_0)
+     (PartNumber "LP5912-0.9DRVR")
+     (Implementation LP5912_3P3_TRANS)
+     (DeviceDesignator A)
+     (MountType SMT)
+     (Manufacturer "Texas Instruments")
+     (Value LP5912_3P3_TRANS)
+     (DevicesInView 1)
+     ("BiasValue Power" "<BiasValue Power>")
+     ("Alternate PartNumber" "LP5912-0.9DRVT"))))
   (component LED_9
    (place ZD1
     (property 
@@ -193,6 +155,79 @@
      (AGILE_PN "370-75142")
      (MFG_PN01 APT3216SGC)
      (Value 18V))))
+  (component R0402
+   (place R89
+    (property 
+     (Prop "1/16W 5%")
+     ("PCB Footprint" R0402)
+     (Price 0.005)
+     (timestamp 010BC5BE)
+     ("Source Package" R0402)
+     (Value 100K/1%)))
+   (place R90
+    (property 
+     (Prop "1/16W 5%")
+     ("PCB Footprint" R0402)
+     (Price 0.005)
+     (timestamp 010BC5D0)
+     ("Source Package" R0402)
+     (Value 13.3K/1%)))
+   (place R92
+    (property 
+     (Prop "1/16W 5%")
+     ("PCB Footprint" R0402)
+     (Price 0.005)
+     (timestamp 010DDF63)
+     ("Source Package" R0402)
+     (Value 1KF)))
+   (place R93
+    (property 
+     (Prop "1/16W 5%")
+     ("PCB Footprint" R0402)
+     (Price 0.005)
+     (timestamp 010DDFA0)
+     ("Source Package" R0402)
+     (Value 1KF)))
+   (place R94
+    (property 
+     (Prop "1/16W 5%")
+     ("PCB Footprint" R0402)
+     (Price 0.005)
+     (timestamp 010DE184)
+     ("Source Package" R0402)
+     (Value 1KF)))
+   (place R19
+    (property 
+     (Prop "1/16W 5%")
+     ("PCB Footprint" R0402)
+     (Price 0.005)
+     (timestamp 01088784)
+     ("Source Package" R0402)
+     (Value 1KF)))
+   (place R83
+    (property 
+     (Prop "1/16W 5%")
+     ("PCB Footprint" R0402)
+     (Price 0.005)
+     (timestamp 010BA4B8)
+     ("Source Package" R0402)
+     (Value 100R)))
+   (place R85
+    (property 
+     (Prop "1/16W 5%")
+     ("PCB Footprint" R0402)
+     (Price 0.005)
+     (timestamp 010BB506)
+     ("Source Package" R0402)
+     (Value 1KF)))
+   (place R87
+    (property 
+     (Prop "1/16W 5%")
+     ("PCB Footprint" R0402)
+     (Price 0.005)
+     (timestamp 010BBA0A)
+     ("Source Package" R0402)
+     (Value 1KF))))
   (component 10u/16V_0
    (place C152
     (property 
@@ -251,6 +286,24 @@
      ("Opt-Part" _)
      (Value 10K)
      (Mod _)))
+   (place R79
+    (property 
+     ("Asm Comm" 5010)
+     (Remark _)
+     ("Cfg-MSI" _)
+     ("New PN" "R11-0560013")
+     ("AVL Cfg" _)
+     ("PCB Footprint" R0603)
+     (CLASS DISCRETE)
+     (timestamp 010B3E52)
+     ("Asm Cfg" _)
+     ("Asm-Lvl" _)
+     ("Source Package" R_3)
+     ("LIB REV" 2004/8/17)
+     ("New Description" R,resistor,56ohm/5%/1/10W,0603)
+     ("Opt-Part" _)
+     (Value 0R/0C)
+     (Mod _)))
    (place R49
     (property 
      ("Asm Comm" 5010)
@@ -268,6 +321,24 @@
      ("New Description" R,resistor,56ohm/5%/1/10W,0603)
      ("Opt-Part" _)
      (Value 10K)
+     (Mod _)))
+   (place R80
+    (property 
+     ("Asm Comm" 5010)
+     (Remark _)
+     ("Cfg-MSI" _)
+     ("New PN" "R11-0560013")
+     ("AVL Cfg" _)
+     ("PCB Footprint" R0603)
+     (CLASS DISCRETE)
+     (timestamp 010B45B7)
+     ("Asm Cfg" _)
+     ("Asm-Lvl" _)
+     ("Source Package" R_3)
+     ("LIB REV" 2004/8/17)
+     ("New Description" R,resistor,56ohm/5%/1/10W,0603)
+     ("Opt-Part" _)
+     (Value 0R/0C)
      (Mod _))))
   (component LED_13
    (place D8
@@ -307,120 +378,39 @@
    (place D2
     (property 
      ("PCB Footprint" "L-0402")
-     (timestamp 0105EFB4)
-     ("Source Package" R_5)
-     (Value "ESD9B12VD-2/TR")))
-   (place D3
-    (property 
-     ("PCB Footprint" "L-0402")
-     (timestamp 0105EFA5)
-     ("Source Package" R_5)
-     (Value "ESD9B12VD-2/TR")))
-   (place D4
-    (property 
-     ("PCB Footprint" "L-0402")
      (timestamp 0105EF96)
      ("Source Package" R_5)
      (Value "ESD9B5VD-2/TR")))
-   (place D5
-    (property 
-     ("PCB Footprint" "L-0402")
-     (timestamp 0105EDFA)
-     ("Source Package" R_5)
-     (Value "ESD9B5VD-2/TR")))
-   (place D6
+   (place D3
     (property 
      ("PCB Footprint" "L-0402")
      (timestamp 0105ED4B)
      ("Source Package" R_5)
      (Value "ESD9B5VD-2/TR")))
-   (place D7
+   (place D4
     (property 
      ("PCB Footprint" "L-0402")
      (timestamp 0105ED3C)
      ("Source Package" R_5)
+     (Value "ESD9B5VD-2/TR")))
+   (place D5
+    (property 
+     ("PCB Footprint" "L-0402")
+     (timestamp 0105EFB4)
+     ("Source Package" R_5)
+     (Value "ESD9B12VD-2/TR")))
+   (place D6
+    (property 
+     ("PCB Footprint" "L-0402")
+     (timestamp 0105EFA5)
+     ("Source Package" R_5)
+     (Value "ESD9B12VD-2/TR")))
+   (place D7
+    (property 
+     ("PCB Footprint" "L-0402")
+     (timestamp 0105EDFA)
+     ("Source Package" R_5)
      (Value "ESD9B5VD-2/TR"))))
-  (component BEAD
-   (place L6
-    (property 
-     ("PCB Footprint" L0603)
-     (CLASS DISCRETE)
-     (DESCRIPTION "IND FER BEAD 600 OHM@100MHZ 1A 25% 0603")
-     (timestamp 0085E5DC)
-     (HEIGHT 0.95MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
-     ("Source Package" BEAD)
-     ("Rated DC Current" 1A)
-     (PART_TYPE FERRITE\\BEAD)
-     (AGILE_PN "180-77855")
-     (MFG_PN01 MPZ1608S601A)
-     (Value 600_Ohm)))
-   (place L7
-    (property 
-     ("PCB Footprint" L0603)
-     (CLASS DISCRETE)
-     (DESCRIPTION "IND FER BEAD 600 OHM@100MHZ 1A 25% 0603")
-     (timestamp 010030CE)
-     (HEIGHT 0.95MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
-     ("Source Package" BEAD)
-     ("Rated DC Current" 500MA)
-     (PART_TYPE FERRITE\\BEAD)
-     (AGILE_PN "180-77855")
-     (MFG_PN01 MPZ1608S601A)
-     (Value 600_Ohm)))
-   (place L8
-    (property 
-     ("PCB Footprint" L0603)
-     (CLASS DISCRETE)
-     (DESCRIPTION "IND FER BEAD 600 OHM@100MHZ 1A 25% 0603")
-     (timestamp 010A4954)
-     (HEIGHT 0.95MM)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
-     (MFG_NAME01 TDK)
-     ("Source Package" BEAD)
-     ("Rated DC Current" 500MA)
-     (PART_TYPE FERRITE\\BEAD)
-     (AGILE_PN "180-77855")
-     (MFG_PN01 MPZ1608S601A)
-     (Value 600_Ohm)))
-   (place L9
-    (property 
-     ("PCB Footprint" L0603)
-     (CLASS DISCRETE)
-     (DESCRIPTION "IND FER BEAD 600 OHM@100MHZ 1A 25% 0603")
-     (timestamp 010A3FE3)
-     (HEIGHT 0.95MM)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
-     (MFG_NAME01 TDK)
-     ("Source Package" BEAD)
-     ("Rated DC Current" 1A)
-     (PART_TYPE FERRITE\\BEAD)
-     (AGILE_PN "180-77855")
-     (MFG_PN01 MPZ1608S601A)
-     (Value 120NH/2%)))
-   (place L11
-    (property 
-     ("PCB Footprint" L0603)
-     (CLASS DISCRETE)
-     (DESCRIPTION "IND FER BEAD 600 OHM@100MHZ 1A 25% 0603")
-     (timestamp 010A4015)
-     (HEIGHT 0.95MM)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
-     (MFG_NAME01 TDK)
-     ("Source Package" BEAD)
-     ("Rated DC Current" 1A)
-     (PART_TYPE FERRITE\\BEAD)
-     (AGILE_PN "180-77855")
-     (MFG_PN01 MPZ1608S601A)
-     (Value 120NH/2%))))
   (component TestLoop
    (place TP2
     (property 
@@ -460,9 +450,9 @@
      (DESCRIPTION "IC VREG STEP DOWN 200kHZ-3MHZ 0.97-41.8V 4A 3.4-42V QFN18")
      (timestamp 00FEDD21)
      (HEIGHT 0.8MM)
-     (MFG_NAME01 "Linear Technology")
-     (ROHS Yes)
      (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "Linear Technology")
      ("Source Package" LT8614_QFN18)
      (AGILE_PN "312-81159")
      (MFG_PN01 LT8614IUDC#PBF)
@@ -474,13 +464,110 @@
      (DESCRIPTION "IC VREG STEP DOWN 200kHZ-3MHZ 0.97-41.8V 4A 3.4-42V QFN18")
      (timestamp 00FECFC2)
      (HEIGHT 0.8MM)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "Linear Technology")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
      ("Source Package" LT8614_QFN18)
      (AGILE_PN "312-81159")
      (MFG_PN01 LT8614IUDC#PBF)
      (Value LT8614))))
+  (component BEAD
+   (place L19
+    (property 
+     ("PCB Footprint" L0603)
+     (CLASS DISCRETE)
+     (DESCRIPTION "IND FER BEAD 600 OHM@100MHZ 1A 25% 0603")
+     (timestamp 01105AC8)
+     (HEIGHT 0.95MM)
+     (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     ("Source Package" BEAD)
+     ("Rated DC Current" 1A)
+     (PART_TYPE FERRITE\\BEAD)
+     (AGILE_PN "180-77855")
+     (MFG_PN01 MPZ1608S601A)
+     (Value NC)))
+   (place L6
+    (property 
+     ("PCB Footprint" L0603)
+     (CLASS DISCRETE)
+     (DESCRIPTION "IND FER BEAD 600 OHM@100MHZ 1A 25% 0603")
+     (timestamp 0085E5DC)
+     (HEIGHT 0.95MM)
+     (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     ("Source Package" BEAD)
+     ("Rated DC Current" 1A)
+     (PART_TYPE FERRITE\\BEAD)
+     (AGILE_PN "180-77855")
+     (MFG_PN01 MPZ1608S601A)
+     (Value 600_Ohm)))
+   (place L7
+    (property 
+     ("PCB Footprint" L0603)
+     (CLASS DISCRETE)
+     (DESCRIPTION "IND FER BEAD 600 OHM@100MHZ 1A 25% 0603")
+     (timestamp 010030CE)
+     (HEIGHT 0.95MM)
+     (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     ("Source Package" BEAD)
+     ("Rated DC Current" 500MA)
+     (PART_TYPE FERRITE\\BEAD)
+     (AGILE_PN "180-77855")
+     (MFG_PN01 MPZ1608S601A)
+     (Value 600_Ohm)))
+   (place L8
+    (property 
+     ("PCB Footprint" L0603)
+     (CLASS DISCRETE)
+     (DESCRIPTION "IND FER BEAD 600 OHM@100MHZ 1A 25% 0603")
+     (timestamp 010A4954)
+     (HEIGHT 0.95MM)
+     (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     ("Source Package" BEAD)
+     ("Rated DC Current" 500MA)
+     (PART_TYPE FERRITE\\BEAD)
+     (AGILE_PN "180-77855")
+     (MFG_PN01 MPZ1608S601A)
+     (Value 600_Ohm)))
+   (place L9
+    (property 
+     ("PCB Footprint" L0603)
+     (CLASS DISCRETE)
+     (DESCRIPTION "IND FER BEAD 600 OHM@100MHZ 1A 25% 0603")
+     (timestamp 010A3FE3)
+     (HEIGHT 0.95MM)
+     (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     ("Source Package" BEAD)
+     ("Rated DC Current" 1A)
+     (PART_TYPE FERRITE\\BEAD)
+     (AGILE_PN "180-77855")
+     (MFG_PN01 MPZ1608S601A)
+     (Value 120NH/2%)))
+   (place L11
+    (property 
+     ("PCB Footprint" L0603)
+     (CLASS DISCRETE)
+     (DESCRIPTION "IND FER BEAD 600 OHM@100MHZ 1A 25% 0603")
+     (timestamp 010A4015)
+     (HEIGHT 0.95MM)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
+     ("Source Package" BEAD)
+     ("Rated DC Current" 1A)
+     (PART_TYPE FERRITE\\BEAD)
+     (AGILE_PN "180-77855")
+     (MFG_PN01 MPZ1608S601A)
+     (Value 120NH/2%))))
   (component MOSFET_P_S1_D4_3
    (place Q7
     (property 
@@ -489,9 +576,9 @@
      (DESCRIPTION "TRAN PJFET -- TSOP-6 ROHS")
      (timestamp 010775A7)
      (HEIGHT 1.10MM)
-     (MFG_NAME01 "INTERNATIONAL RECTIFIER")
-     (ROHS Yes)
      (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "INTERNATIONAL RECTIFIER")
      ("Source Package" MOSFET_P_S1_D4_3)
      (AGILE_PN "480-75207")
      (MFG_PN01 SI3443DVTRPBF)
@@ -504,9 +591,9 @@
      (DESCRIPTION "TRAN PJFET -- TSOP-6 ROHS")
      (timestamp 010784B0)
      (HEIGHT 1.10MM)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "INTERNATIONAL RECTIFIER")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
      ("Source Package" MOSFET_P_S1_D4_5)
      (AGILE_PN "480-75207")
      (MFG_PN01 SI3443DVTRPBF)
@@ -519,14 +606,63 @@
      (DESCRIPTION "CON 2X7 PLUG SHRD TH 100MIL CTR 390H 62MIL PCB AU")
      (timestamp 00F3B8F6)
      (HEIGHT 9.65MM)
-     (MFG_NAME01 3M)
-     (ROHS Yes)
      (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 3M)
      ("Source Package" CONN_HDR_7X2)
      (AGILE_PN "210-77174")
      (MFG_PN01 "N2514-6002RB")
      (Value CON_2X7))))
+  (component KSZ9031RNXUA_48P_EP_8
+   (place U6
+    (property 
+     ("PCB Footprint" "QFN50P600X600X100-37N")
+     (CLASS IC)
+     (DESCRIPTION "IC XCVR GBIT ETHERNET PHY 10/100/1000MBPS RGMII 1.2V AEC-Q100 WQFN48")
+     (timestamp 010A09F2)
+     (HEIGHT 0.9MM)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 MICREL)
+     ("Source Package" KSZ9031RNXUA_48P_EP_8)
+     (AGILE_PN "312-81311")
+     (MFG_PN01 KSZ9031RNXUA)
+     (Value TJA1100))))
   (component INDUCTOR
+   (place L17
+    (property 
+     ("PCB Footprint" L0603)
+     (CLASS DISCRETE)
+     (DESCRIPTION "IND PWR 4.7uH@100KHZ 4.5A 20% AEC-Q200 SMT")
+     (timestamp 010B40C4)
+     (HEIGHT 3.1MM)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 Coilcraft)
+     ("Source Package" INDUCTOR)
+     (PART_TYPE INDUCTOR\\POWER)
+     (Tolerance 20%)
+     (AGILE_PN "180-78254")
+     (MFG_PN01 "XAL4030-472ME")
+     (TOL 20%)
+     (Value FB_600_Ohm)))
+   (place L18
+    (property 
+     ("PCB Footprint" IND2_8043)
+     (CLASS DISCRETE)
+     (DESCRIPTION "IND PWR 4.7uH@100KHZ 4.5A 20% AEC-Q200 SMT")
+     (timestamp 010BC569)
+     (HEIGHT 3.1MM)
+     (MFG_NAME01 Coilcraft)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     ("Source Package" INDUCTOR)
+     (Tolerance 20%)
+     (PART_TYPE INDUCTOR\\POWER)
+     (AGILE_PN "180-78254")
+     (TOL 20%)
+     (MFG_PN01 "XAL4030-472ME")
+     (Value 15uH/2A)))
    (place L1
     (property 
      ("PCB Footprint" ind2_xal40)
@@ -551,51 +687,22 @@
      (DESCRIPTION "IND PWR 4.7uH@100KHZ 4.5A 20% AEC-Q200 SMT")
      (timestamp 00FECEF2)
      (HEIGHT 3.1MM)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 Coilcraft)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
      ("Source Package" INDUCTOR)
-     (PART_TYPE INDUCTOR\\POWER)
      (Tolerance 20%)
+     (PART_TYPE INDUCTOR\\POWER)
      (AGILE_PN "180-78254")
-     (TOL 20%)
      (MFG_PN01 "XAL4030-472ME")
+     (TOL 20%)
      (Value 4.7uH)))
-   (place L3
-    (property 
-     ("PCB Footprint" ind2_xal40)
-     (timestamp 0106B123)
-     ("Source Package" INDUCTOR)
-     (Value 10uH/2A)))
-   (place L4
-    (property 
-     ("PCB Footprint" ind2_xal40)
-     (timestamp 01067B5B)
-     ("Source Package" INDUCTOR)
-     (Value 10uH/2A)))
    (place L12
     (property 
      ("PCB Footprint" L0603)
      (CLASS DISCRETE)
      (DESCRIPTION "IND PWR 4.7uH@100KHZ 4.5A 20% AEC-Q200 SMT")
      (timestamp 0104838C)
-     (HEIGHT 3.1MM)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
-     (MFG_NAME01 Coilcraft)
-     ("Source Package" INDUCTOR)
-     (PART_TYPE INDUCTOR\\POWER)
-     (Tolerance 20%)
-     (AGILE_PN "180-78254")
-     (MFG_PN01 "XAL4030-472ME")
-     (TOL 20%)
-     (Value FB_600_Ohm)))
-   (place L13
-    (property 
-     ("PCB Footprint" L0603)
-     (CLASS DISCRETE)
-     (DESCRIPTION "IND PWR 4.7uH@100KHZ 4.5A 20% AEC-Q200 SMT")
-     (timestamp 01048325)
      (HEIGHT 3.1MM)
      (MFG_NAME01 Coilcraft)
      (ROHS Yes)
@@ -614,15 +721,15 @@
      (DESCRIPTION "IND PWR 4.7uH@100KHZ 4.5A 20% AEC-Q200 SMT")
      (timestamp 01076BED)
      (HEIGHT 3.1MM)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 Coilcraft)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
      ("Source Package" INDUCTOR)
-     (PART_TYPE INDUCTOR\\POWER)
      (Tolerance 20%)
+     (PART_TYPE INDUCTOR\\POWER)
      (AGILE_PN "180-78254")
-     (MFG_PN01 "XAL4030-472ME")
      (TOL 20%)
+     (MFG_PN01 "XAL4030-472ME")
      (Value 1000/OHM)))
    (place L16
     (property 
@@ -631,74 +738,16 @@
      (DESCRIPTION "IND PWR 4.7uH@100KHZ 4.5A 20% AEC-Q200 SMT")
      (timestamp 01073D0A)
      (HEIGHT 3.1MM)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 Coilcraft)
-     ("Source Package" INDUCTOR)
-     (PART_TYPE INDUCTOR\\POWER)
-     (Tolerance 20%)
-     (AGILE_PN "180-78254")
-     (MFG_PN01 "XAL4030-472ME")
-     (TOL 20%)
-     (Value 4030/6.8uh/2A))))
-  (component KSZ9031RNXUA_48P_EP_8
-   (place U6
-    (property 
-     ("PCB Footprint" "QFN50P600X600X100-37N")
-     (CLASS IC)
-     (DESCRIPTION "IC XCVR GBIT ETHERNET PHY 10/100/1000MBPS RGMII 1.2V AEC-Q100 WQFN48")
-     (timestamp 010A09F2)
-     (HEIGHT 0.9MM)
-     (CAD_APPROVED Yes)
      (ROHS Yes)
-     (MFG_NAME01 MICREL)
-     ("Source Package" KSZ9031RNXUA_48P_EP_8)
-     (AGILE_PN "312-81311")
-     (MFG_PN01 KSZ9031RNXUA)
-     (Value TJA1100))))
-  (component C0603
-   (place C20
-    (property 
-     (Prop "50V 10%")
-     ("PCB Footprint" C0402)
-     (timestamp 01067B88)
-     ("Source Package" C0603)
-     (Value 22NF/25V)))
-   (place C21
-    (property 
-     (Prop "50V 10% ")
-     ("PCB Footprint" "C-0805")
-     (timestamp 0106B168)
-     ("Source Package" C0603)
-     (Value 10UF/10V)))
-   (place C24
-    (property 
-     (Prop "50V 10%")
-     ("PCB Footprint" C0402)
-     (timestamp 0106B145)
-     ("Source Package" C0603)
-     (Value 100NF)))
-   (place C27
-    (property 
-     (Prop "50V 10%")
-     ("PCB Footprint" C0402)
-     (timestamp 01067B7F)
-     ("Source Package" C0603)
-     (Value 100NF)))
-   (place C28
-    (property 
-     (Prop "50V 10% ")
-     ("PCB Footprint" "C-0805")
-     (timestamp 01067BA4)
-     ("Source Package" C0603)
-     (Value 10UF/10V)))
-   (place C19
-    (property 
-     (Prop "50V 10%")
-     ("PCB Footprint" C0402)
-     (timestamp 0106B14E)
-     ("Source Package" C0603)
-     (Value 22NF/25V))))
+     (CAD_APPROVED Yes)
+     ("Source Package" INDUCTOR)
+     (Tolerance 20%)
+     (PART_TYPE INDUCTOR\\POWER)
+     (AGILE_PN "180-78254")
+     (TOL 20%)
+     (MFG_PN01 "XAL4030-472ME")
+     (Value 4030/6.8uh/2A))))
   (component "MC33901WEF-8P_11"
    (place U11
     (property 
@@ -707,9 +756,9 @@
      (DESCRIPTION "IC XCVR CAN HS TXD PROTECTED 60KB/S-1MB/S 4.5-5.5V SOIC8")
      (timestamp 01084B99)
      (HEIGHT 1.75MM)
-     (MFG_NAME01 "FREESCALE SEMICONDUCTOR")
-     (ROHS Yes)
      (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "FREESCALE SEMICONDUCTOR")
      ("Source Package" "MC33901WEF-8P_11")
      (AGILE_PN "312-80950")
      (MFG_PN01 MC33901SEF)
@@ -722,9 +771,9 @@
      (DESCRIPTION "IC XCVR CAN HS TXD PROTECTED 60KB/S-1MB/S 4.5-5.5V SOIC8")
      (timestamp 010744AC)
      (HEIGHT 1.75MM)
-     (MFG_NAME01 "FREESCALE SEMICONDUCTOR")
-     (ROHS Yes)
      (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "FREESCALE SEMICONDUCTOR")
      ("Source Package" "MC33901WEF-8P_7")
      (AGILE_PN "312-80950")
      (MFG_PN01 MC33901SEF)
@@ -737,9 +786,9 @@
      (DESCRIPTION "TRAN PJFET -- TSOP-6 ROHS")
      (timestamp 01079D07)
      (HEIGHT 1.10MM)
-     (MFG_NAME01 "INTERNATIONAL RECTIFIER")
-     (ROHS Yes)
      (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "INTERNATIONAL RECTIFIER")
      ("Source Package" MOSFET_P_S1_D4_6)
      (AGILE_PN "480-75207")
      (MFG_PN01 SI3443DVTRPBF)
@@ -797,9 +846,9 @@
      (DESCRIPTION "IC XCVR CAN HS TXD PROTECTED 60KB/S-1MB/S 4.5-5.5V SOIC8")
      (timestamp 01076BC4)
      (HEIGHT 1.75MM)
-     (MFG_NAME01 "FREESCALE SEMICONDUCTOR")
-     (ROHS Yes)
      (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "FREESCALE SEMICONDUCTOR")
      ("Source Package" "MC33901WEF-8P_8")
      (AGILE_PN "312-80950")
      (MFG_PN01 MC33901SEF)
@@ -811,26 +860,13 @@
      (DESCRIPTION "IC XCVR CAN HS TXD PROTECTED 60KB/S-1MB/S 4.5-5.5V SOIC8")
      (timestamp 010758C0)
      (HEIGHT 1.75MM)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "FREESCALE SEMICONDUCTOR")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
      ("Source Package" "MC33901WEF-8P_8")
      (AGILE_PN "312-80950")
      (MFG_PN01 MC33901SEF)
      (Value "DCX114YUQ-7-F"))))
-  (component SY8008_0
-   (place U3
-    (property 
-     ("PCB Footprint" STI3470)
-     (timestamp 01067B44)
-     ("Source Package" SY8008_0)
-     (Value STI3470)))
-   (place U4
-    (property 
-     ("PCB Footprint" STI3470)
-     (timestamp 0106B116)
-     ("Source Package" SY8008_0)
-     (Value STI3470))))
   (component "T POINT R"
    (place TP10
     (property 
@@ -840,9 +876,9 @@
      (timestamp 00FE212F)
      (SILK TP_SE)
      (HEIGHT "0.1 MM")
-     (MFG_NAME01 NA)
-     (ROHS Yes)
      (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 NA)
      ("Source Package" "T POINT R")
      (AGILE_PN "280-75148")
      (MFG_PN01 NA)
@@ -885,9 +921,9 @@
      (timestamp 01079A55)
      (SILK TP_SE)
      (HEIGHT "0.1 MM")
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 NA)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
      ("Source Package" "T POINT R")
      (AGILE_PN "280-75148")
      (MFG_PN01 NA)
@@ -900,9 +936,9 @@
      (timestamp 01079A5D)
      (SILK TP_SE)
      (HEIGHT "0.1 MM")
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 NA)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
      ("Source Package" "T POINT R")
      (AGILE_PN "280-75148")
      (MFG_PN01 NA)
@@ -915,9 +951,9 @@
      (timestamp 0107379F)
      (SILK TP_SE)
      (HEIGHT "0.1 MM")
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 NA)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
      ("Source Package" "T POINT R")
      (AGILE_PN "280-75148")
      (MFG_PN01 NA)
@@ -945,9 +981,9 @@
      (timestamp 0107AD82)
      (SILK TP_SE)
      (HEIGHT "0.1 MM")
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 NA)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
      ("Source Package" "T POINT R")
      (AGILE_PN "280-75148")
      (MFG_PN01 NA)
@@ -975,9 +1011,9 @@
      (timestamp 01075D96)
      (SILK TP_SE)
      (HEIGHT "0.1 MM")
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 NA)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
      ("Source Package" "T POINT R")
      (AGILE_PN "280-75148")
      (MFG_PN01 NA)
@@ -1020,9 +1056,9 @@
      (timestamp 0107ECF3)
      (SILK SPI_OUT)
      (HEIGHT "0.1 MM")
-     (MFG_NAME01 NA)
-     (ROHS Yes)
      (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 NA)
      ("Source Package" "T POINT R")
      (AGILE_PN "280-75148")
      (MFG_PN01 NA)
@@ -1050,9 +1086,9 @@
      (timestamp 0107F2A0)
      (SILK SPI_OUT)
      (HEIGHT "0.1 MM")
-     (MFG_NAME01 NA)
-     (ROHS Yes)
      (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 NA)
      ("Source Package" "T POINT R")
      (AGILE_PN "280-75148")
      (MFG_PN01 NA)
@@ -1065,9 +1101,9 @@
      (timestamp 010806EC)
      (SILK TP_SE)
      (HEIGHT "0.1 MM")
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 NA)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
      ("Source Package" "T POINT R")
      (AGILE_PN "280-75148")
      (MFG_PN01 NA)
@@ -1080,26 +1116,13 @@
      (timestamp 01080704)
      (SILK TP_SE)
      (HEIGHT "0.1 MM")
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 NA)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
      ("Source Package" "T POINT R")
      (AGILE_PN "280-75148")
      (MFG_PN01 NA)
      (Value TEST_POINT))))
-  (component 10u/10V_0
-   (place C22
-    (property 
-     ("PCB Footprint" "C-0805")
-     (timestamp 0106B0CD)
-     ("Source Package" 10u/10V_0)
-     (Value 10uF)))
-   (place C25
-    (property 
-     ("PCB Footprint" "C-0805")
-     (timestamp 01067AFC)
-     ("Source Package" 10u/10V_0)
-     (Value 10uF))))
   (component MOSFET_P_S1_D4_7
    (place Q9
     (property 
@@ -1122,9 +1145,9 @@
      (DESCRIPTION "TRAN PJFET -- TSOP-6 ROHS")
      (timestamp 01082CE9)
      (HEIGHT 1.10MM)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "INTERNATIONAL RECTIFIER")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
      ("Source Package" MOSFET_P_S1_D4_7)
      (AGILE_PN "480-75207")
      (MFG_PN01 SI3443DVTRPBF)
@@ -1144,9 +1167,9 @@
      (DESCRIPTION "TRAN PJFET -- TSOP-6 ROHS")
      (timestamp 0108433D)
      (HEIGHT 1.10MM)
-     (MFG_NAME01 "INTERNATIONAL RECTIFIER")
-     (ROHS Yes)
      (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "INTERNATIONAL RECTIFIER")
      ("Source Package" MOSFET_P_S1_D4_8)
      (AGILE_PN "480-75207")
      (MFG_PN01 SI3443DVTRPBF)
@@ -1159,9 +1182,9 @@
      (DESCRIPTION "IC XCVR CAN HS TXD PROTECTED 60KB/S-1MB/S 4.5-5.5V SOIC8")
      (timestamp 01047337)
      (HEIGHT 1.75MM)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "FREESCALE SEMICONDUCTOR")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
      ("Source Package" "MC33901WEF-8P_9")
      (AGILE_PN "312-80950")
      (MFG_PN01 MC33901SEF)
@@ -1279,23 +1302,23 @@
      (AGILE_PN "470-80881")
      (MFG_PN01 CRCW040210K0FKEDHP)
      (Value 10K)))
-   (place R60
+   (place R91
     (property 
      ("PCB Footprint" R0402)
      (CLASS DISCRETE)
-     (DESCRIPTION "RES MF 10K 1/8W 1% AEC-Q200 0402")
-     (timestamp 01078FB9)
-     (HEIGHT 0.4MM)
-     (MFG_NAME01 "VISHAY INTERTECHNOLOGY")
-     (ROHS Yes)
+     (DESCRIPTION "RES MF 41.2K 1/10W 1% 0603")
+     (timestamp 010CD519)
+     (HEIGHT "0.55 MM")
+     (FPLIST RC0603_OV,RC0603,0603_CC)
      (CAD_APPROVED Yes)
-     (FPLIST RC0805_OV,RC0805,0805_CC)
+     (ROHS Yes)
+     (MFG_NAME01 "KOA SPEER")
      ("Source Package" RES)
      (Tolerance 1%)
-     (AGILE_PN "470-80881")
-     (MFG_PN01 CRCW040210K0FKEDHP)
-     (Value 21K/1%)))
-   (place R61
+     (AGILE_PN "470-75538")
+     (MFG_PN01 RK73H1JTTD4122F)
+     (Value 10K)))
+   (place R60
     (property 
      ("PCB Footprint" R0402)
      (CLASS DISCRETE)
@@ -1311,6 +1334,22 @@
      (AGILE_PN "470-80881")
      (MFG_PN01 CRCW040210K0FKEDHP)
      (Value 10K)))
+   (place R61
+    (property 
+     ("PCB Footprint" R0402)
+     (CLASS DISCRETE)
+     (DESCRIPTION "RES MF 10K 1/8W 1% AEC-Q200 0402")
+     (timestamp 01078FB9)
+     (HEIGHT 0.4MM)
+     (FPLIST RC0805_OV,RC0805,0805_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "VISHAY INTERTECHNOLOGY")
+     ("Source Package" RES)
+     (Tolerance 1%)
+     (AGILE_PN "470-80881")
+     (MFG_PN01 CRCW040210K0FKEDHP)
+     (Value 21K/1%)))
    (place R30
     (property 
      ("PCB Footprint" R0402)
@@ -1318,10 +1357,10 @@
      (DESCRIPTION "RES MF 10K 1/8W 1% AEC-Q200 0402")
      (timestamp 010A1FF2)
      (HEIGHT 0.4MM)
-     (FPLIST RC0805_OV,RC0805,0805_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "VISHAY INTERTECHNOLOGY")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST RC0805_OV,RC0805,0805_CC)
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-80881")
@@ -1334,10 +1373,10 @@
      (DESCRIPTION "RES MF 10K 1/8W 1% AEC-Q200 0402")
      (timestamp 010791AC)
      (HEIGHT 0.4MM)
-     (FPLIST RC0805_OV,RC0805,0805_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "VISHAY INTERTECHNOLOGY")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST RC0805_OV,RC0805,0805_CC)
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-80881")
@@ -1366,10 +1405,10 @@
      (DESCRIPTION "RES MF 10K 1/8W 1% AEC-Q200 0402")
      (timestamp 010A1FFA)
      (HEIGHT 0.4MM)
-     (MFG_NAME01 "VISHAY INTERTECHNOLOGY")
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST RC0805_OV,RC0805,0805_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "VISHAY INTERTECHNOLOGY")
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-80881")
@@ -1446,16 +1485,16 @@
      (DESCRIPTION "RES MF ZERO OHM 1/10W -- AEC-Q200 0603")
      (timestamp 00FECD98)
      (HEIGHT 0.6MM)
-     (FPLIST "RC0603_OV,RC0603,R603-X2,0603_CC")
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "KOA SPEER")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST "RC0603_OV,RC0603,R603-X2,0603_CC")
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-75407")
-     (MFG_PN01 RK73Z1JTTD)
      (TOL 1%)
-     (Value 0)))
+     (MFG_PN01 RK73Z1JTTD)
+     (Value 0R)))
    (place R33
     (property 
      ("PCB Footprint" R0402)
@@ -1490,21 +1529,20 @@
      (Value 21K/1%)))
    (place R4
     (property 
-     ("PCB Footprint" R0603)
+     ("PCB Footprint" R0402)
      (CLASS DISCRETE)
-     (DESCRIPTION "RES MF 270 1/10W 5% 0603")
-     (timestamp 00FF7439)
-     (HEIGHT 0.55MM)
-     (MFG_NAME01 "KOA SPEER")
-     (ROHS Yes)
+     (DESCRIPTION "RES MF 1M 1/16W 1% 0402")
+     (timestamp 00FEDC3D)
+     (HEIGHT 0.4MM)
+     (FPLIST RC0402_25,RC0402_HD,0402_CC)
      (CAD_APPROVED Yes)
-     (FPLIST RC0603_OV,RC0603,0603_CC)
+     (ROHS Yes)
+     (MFG_NAME01 BOURNS)
      ("Source Package" RES)
-     (Tolerance 5%)
-     (AGILE_PN "470-30298")
-     (TOL 5%)
-     (MFG_PN01 RK73B1JTTD271J)
-     (Value 270)))
+     (Tolerance 1%)
+     (AGILE_PN "470-80575")
+     (MFG_PN01 "CR0402-FX-1004GLF")
+     (Value 1M)))
    (place R34
     (property 
      ("PCB Footprint" R0402)
@@ -1512,10 +1550,10 @@
      (DESCRIPTION "RES MF 10K 1/8W 1% AEC-Q200 0402")
      (timestamp 010A2026)
      (HEIGHT 0.4MM)
-     (FPLIST RC0805_OV,RC0805,0805_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "VISHAY INTERTECHNOLOGY")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST RC0805_OV,RC0805,0805_CC)
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-80881")
@@ -1528,10 +1566,10 @@
      (DESCRIPTION "RES MF 10K 1/8W 1% AEC-Q200 0402")
      (timestamp 010791CD)
      (HEIGHT 0.4MM)
-     (FPLIST RC0805_OV,RC0805,0805_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "VISHAY INTERTECHNOLOGY")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST RC0805_OV,RC0805,0805_CC)
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-80881")
@@ -1541,18 +1579,19 @@
     (property 
      ("PCB Footprint" R0402)
      (CLASS DISCRETE)
-     (DESCRIPTION "RES MF 1M 1/16W 1% 0402")
-     (timestamp 00FEDC3D)
-     (HEIGHT 0.4MM)
-     (MFG_NAME01 BOURNS)
-     (ROHS Yes)
+     (DESCRIPTION "RES MF 270 1/10W 5% 0603")
+     (timestamp 00FF7439)
+     (HEIGHT 0.55MM)
+     (FPLIST RC0603_OV,RC0603,0603_CC)
      (CAD_APPROVED Yes)
-     (FPLIST RC0402_25,RC0402_HD,0402_CC)
+     (ROHS Yes)
+     (MFG_NAME01 "KOA SPEER")
      ("Source Package" RES)
-     (Tolerance 1%)
-     (AGILE_PN "470-80575")
-     (MFG_PN01 "CR0402-FX-1004GLF")
-     (Value 1M)))
+     (Tolerance 5%)
+     (AGILE_PN "470-30298")
+     (MFG_PN01 RK73B1JTTD271J)
+     (TOL 5%)
+     (Value 560R)))
    (place R35
     (property 
      ("PCB Footprint" R0402)
@@ -1560,10 +1599,10 @@
      (DESCRIPTION "RES MF 4.70K 1/16W 1% 0402")
      (timestamp 010A405C)
      (HEIGHT 0.4mm)
-     (MFG_NAME01 "WALSIN TECHNOLOGY CORP.")
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST RC0402_25,RC0402_HD,0402_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "WALSIN TECHNOLOGY CORP.")
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-75418")
@@ -1587,7 +1626,7 @@
      (Value 33.2K/1%)))
    (place R6
     (property 
-     ("PCB Footprint" R0603)
+     ("PCB Footprint" R0402)
      (CLASS DISCRETE)
      (DESCRIPTION "RES MF 41.2K 1/10W 1% 0603")
      (timestamp 00FEDBC1)
@@ -1608,10 +1647,10 @@
      (DESCRIPTION "RES MF 4.70K 1/16W 1% 0402")
      (timestamp 010A4064)
      (HEIGHT 0.4mm)
-     (MFG_NAME01 "WALSIN TECHNOLOGY CORP.")
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST RC0402_25,RC0402_HD,0402_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "WALSIN TECHNOLOGY CORP.")
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-75418")
@@ -1637,18 +1676,18 @@
     (property 
      ("PCB Footprint" R0402)
      (CLASS DISCRETE)
-     (DESCRIPTION "RES MF 470K 1/10W 5% 0603")
-     (timestamp 01045BB3)
+     (DESCRIPTION "RES MF 41.2K 1/10W 1% 0603")
+     (timestamp 00FECEA2)
      (HEIGHT "0.55 MM")
-     (MFG_NAME01 BOURNS)
+     (MFG_NAME01 "KOA SPEER")
      (ROHS Yes)
      (CAD_APPROVED Yes)
      (FPLIST RC0603_OV,RC0603,0603_CC)
      ("Source Package" RES)
-     (Tolerance 5%)
-     (AGILE_PN "470-75455")
-     (MFG_PN01 "CR0603-JW-474ELF")
-     (Value 470K)))
+     (Tolerance 1%)
+     (AGILE_PN "470-75538")
+     (MFG_PN01 RK73H1JTTD4122F)
+     (Value 41.2K)))
    (place R37
     (property 
      ("PCB Footprint" R0402)
@@ -1683,20 +1722,20 @@
      (Value 10K)))
    (place R8
     (property 
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" R0402)
      (CLASS DISCRETE)
-     (DESCRIPTION "RES MF 41.2K 1/10W 1% 0603")
-     (timestamp 00FECEA2)
+     (DESCRIPTION "RES MF 470K 1/10W 5% 0603")
+     (timestamp 01045BB3)
      (HEIGHT "0.55 MM")
-     (MFG_NAME01 "KOA SPEER")
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST RC0603_OV,RC0603,0603_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 BOURNS)
      ("Source Package" RES)
-     (Tolerance 1%)
-     (AGILE_PN "470-75538")
-     (MFG_PN01 RK73H1JTTD4122F)
-     (Value 41.2K)))
+     (Tolerance 5%)
+     (AGILE_PN "470-75455")
+     (MFG_PN01 "CR0603-JW-474ELF")
+     (Value 470K)))
    (place R38
     (property 
      ("PCB Footprint" R0402)
@@ -1720,10 +1759,10 @@
      (DESCRIPTION "RES MF 412K 1/16W 1% AEC-Q200 0402")
      (timestamp 00FEDD8D)
      (HEIGHT "0.40 MM")
-     (FPLIST RC0402_25,RC0402_HD,0402_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "VISHAY INTERTECHNOLOGY")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST RC0402_25,RC0402_HD,0402_CC)
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-31129")
@@ -1752,10 +1791,10 @@
      (DESCRIPTION "RES MF 68.0 OHM  1/10W 1% 0603")
      (timestamp 01079B54)
      (HEIGHT 0.55MM)
-     (MFG_NAME01 "KOA SPEER")
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST RC0603_OV,RC0603,0603_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "KOA SPEER")
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-77892")
@@ -1768,10 +1807,10 @@
      (DESCRIPTION "RES MF 68.0 OHM  1/10W 1% 0603")
      (timestamp 01082BFA)
      (HEIGHT 0.55MM)
-     (MFG_NAME01 "KOA SPEER")
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST RC0603_OV,RC0603,0603_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "KOA SPEER")
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-77892")
@@ -1800,10 +1839,10 @@
      (DESCRIPTION "RES MF 68.0 OHM  1/10W 1% 0603")
      (timestamp 0107499B)
      (HEIGHT 0.55MM)
-     (FPLIST RC0603_OV,RC0603,0603_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "KOA SPEER")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST RC0603_OV,RC0603,0603_CC)
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-77892")
@@ -1864,10 +1903,10 @@
      (DESCRIPTION "RES MF 68.0 OHM  1/10W 1% 0603")
      (timestamp 01075D79)
      (HEIGHT 0.55MM)
-     (FPLIST RC0603_OV,RC0603,0603_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "KOA SPEER")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST RC0603_OV,RC0603,0603_CC)
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-77892")
@@ -1896,10 +1935,10 @@
      (DESCRIPTION "RES MF 4.70K 1/16W 1% 0402")
      (timestamp 010A439F)
      (HEIGHT 0.4mm)
-     (FPLIST RC0402_25,RC0402_HD,0402_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "WALSIN TECHNOLOGY CORP.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST RC0402_25,RC0402_HD,0402_CC)
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-75418")
@@ -1944,10 +1983,10 @@
      (DESCRIPTION "RES MF 68.0 OHM  1/10W 1% 0603")
      (timestamp 01075F23)
      (HEIGHT 0.55MM)
-     (FPLIST RC0603_OV,RC0603,0603_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "KOA SPEER")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST RC0603_OV,RC0603,0603_CC)
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-77892")
@@ -1985,6 +2024,22 @@
      (AGILE_PN "470-77892")
      (MFG_PN01 RK73H1JTTD68R0F)
      (Value 7.68K/1%)))
+   (place R78
+    (property 
+     ("PCB Footprint" R0603)
+     (CLASS DISCRETE)
+     (DESCRIPTION "RES MF 10K 1/8W 1% AEC-Q200 0402")
+     (timestamp 010B3AF2)
+     (HEIGHT 0.4MM)
+     (FPLIST RC0805_OV,RC0805,0805_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "VISHAY INTERTECHNOLOGY")
+     ("Source Package" RES)
+     (Tolerance 1%)
+     (AGILE_PN "470-80881")
+     (MFG_PN01 CRCW040210K0FKEDHP)
+     (Value 60R)))
    (place R46
     (property 
      ("PCB Footprint" R0402)
@@ -1992,10 +2047,10 @@
      (DESCRIPTION "RES MF 4.70K 1/16W 1% 0402")
      (timestamp 010A31B1)
      (HEIGHT 0.4mm)
-     (FPLIST RC0402_25,RC0402_HD,0402_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "WALSIN TECHNOLOGY CORP.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST RC0402_25,RC0402_HD,0402_CC)
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-75418")
@@ -2003,7 +2058,7 @@
      (Value NC)))
    (place R47
     (property 
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" R0402)
      (CLASS DISCRETE)
      (DESCRIPTION "RES MF 15.0K 1/10W 1% AEC-Q200 0603")
      (timestamp 00F3F931)
@@ -2049,22 +2104,6 @@
      (AGILE_PN "470-30988")
      (MFG_PN01 RK73H1ETTP2402F)
      (Value 24K)))
-   (place R50
-    (property 
-     ("PCB Footprint" R0402)
-     (CLASS DISCRETE)
-     (DESCRIPTION "RES MF 10K 1/8W 1% AEC-Q200 0402")
-     (timestamp 010486B3)
-     (HEIGHT 0.4MM)
-     (FPLIST RC0805_OV,RC0805,0805_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
-     (MFG_NAME01 "VISHAY INTERTECHNOLOGY")
-     ("Source Package" RES)
-     (Tolerance 1%)
-     (AGILE_PN "470-80881")
-     (MFG_PN01 CRCW040210K0FKEDHP)
-     (Value 120R)))
    (place R51
     (property 
      ("PCB Footprint" R0402)
@@ -2072,31 +2111,15 @@
      (DESCRIPTION "RES MF 68.0 OHM  1/10W 1% 0603")
      (timestamp 0107AEAF)
      (HEIGHT 0.55MM)
-     (MFG_NAME01 "KOA SPEER")
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST RC0603_OV,RC0603,0603_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "KOA SPEER")
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-77892")
      (MFG_PN01 RK73H1JTTD68R0F)
      (Value 0R)))
-   (place R52
-    (property 
-     ("PCB Footprint" R0402)
-     (CLASS DISCRETE)
-     (DESCRIPTION "RES MF 10K 1/8W 1% AEC-Q200 0402")
-     (timestamp 010486C0)
-     (HEIGHT 0.4MM)
-     (FPLIST RC0805_OV,RC0805,0805_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
-     (MFG_NAME01 "VISHAY INTERTECHNOLOGY")
-     ("Source Package" RES)
-     (Tolerance 1%)
-     (AGILE_PN "470-80881")
-     (MFG_PN01 CRCW040210K0FKEDHP)
-     (Value 120R)))
    (place R20
     (property 
      ("PCB Footprint" R0402)
@@ -2104,19 +2127,19 @@
      (DESCRIPTION "RES MF 4.70K 1/16W 1% 0402")
      (timestamp 00FD8A58)
      (HEIGHT 0.4mm)
-     (FPLIST RC0402_25,RC0402_HD,0402_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "WALSIN TECHNOLOGY CORP.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST RC0402_25,RC0402_HD,0402_CC)
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-75418")
-     (MFG_PN01 WR04X4701FTL)
      (TOL 5%)
+     (MFG_PN01 WR04X4701FTL)
      (Value 4.7K)))
    (place R21
     (property 
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" R0402)
      (CLASS DISCRETE)
      (DESCRIPTION "RES MF 68.0 OHM  1/10W 1% 0603")
      (timestamp 0107EDA7)
@@ -2153,10 +2176,10 @@
      (DESCRIPTION "RES MF 68.0 OHM  1/10W 1% 0603")
      (timestamp 0107EAE0)
      (HEIGHT 0.55MM)
-     (FPLIST RC0603_OV,RC0603,0603_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "KOA SPEER")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST RC0603_OV,RC0603,0603_CC)
      ("Source Package" RES)
      (Tolerance 1%)
      (AGILE_PN "470-77892")
@@ -2276,70 +2299,11 @@
      (PRIORITY_PN "048-01001")
      (MFG_PN01 APT3216SGC)
      (Value LED_RED))))
-  (component CONN_HDR_21
-   (place JP1
-    (property 
-     ("PCB Footprint" CON12)
-     (CLASS IO)
-     (DESCRIPTION "HDR 1x3 TH 100MIL SP 343H AU 100L")
-     (timestamp 01097D4D)
-     (HEIGHT 8.72MM)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
-     (MFG_NAME01 SAMTEC)
-     ("Source Package" CONN_HDR_21)
-     (AGILE_PN "210-80734")
-     (MFG_PN01 "TSW-103-07-F-S")
-     (Value CON12))))
-  (component CAP
-   (place EC1
-    (property 
-     ("PCB Footprint" RB1)
-     (timestamp 0106B0F5)
-     ("Source Package" CAP)
-     (Value 100uF/10V)))
-   (place EC2
-    (property 
-     ("PCB Footprint" RB1)
-     (timestamp 0106B0B8)
-     ("Source Package" CAP)
-     (Value 100uF/16V)))
-   (place EC3
-    (property 
-     ("PCB Footprint" RB1)
-     (timestamp 01067AD1)
-     ("Source Package" CAP)
-     (Value 100uF/16V)))
-   (place EC4
-    (property 
-     ("PCB Footprint" RB1)
-     (timestamp 01067B2B)
-     ("Source Package" CAP)
-     (Value 100uF/10V))))
-  (component "C-0603_4"
-   (place C23
-    (property 
-     ("PCB Footprint" C0402)
-     (timestamp 0106B0D9)
-     ("Source Package" "C-0603_4")
-     (Value 100nF)))
-   (place C26
-    (property 
-     ("PCB Footprint" C0402)
-     (timestamp 01067B05)
-     ("Source Package" "C-0603_4")
-     (Value 100nF)))
-   (place C34
-    (property 
-     ("PCB Footprint" C0402)
-     (timestamp 01088815)
-     ("Source Package" "C-0603_4")
-     (Value 100nF))))
   (component CAP_NP_0
    (place C170
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 010841FD)
@@ -2356,15 +2320,15 @@
    (place C171
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" R0402)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 010761DD)
      (HEIGHT 0.33MM)
-     (FPLIST CC0201,CC0201_HD,0201_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0201,CC0201_HD,0201_CC)
      ("Source Package" CAP_NP_0)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -2373,7 +2337,7 @@
    (place C172
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" R0402)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 01075F81)
@@ -2390,15 +2354,15 @@
    (place C157
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" R0402)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 01047D8B)
      (HEIGHT 0.33MM)
-     (FPLIST CC0201,CC0201_HD,0201_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0201,CC0201_HD,0201_CC)
      ("Source Package" CAP_NP_0)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -2412,10 +2376,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 01073789)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP_0)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -2429,10 +2393,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 01073796)
      (HEIGHT 0.33MM)
-     (FPLIST CC0201,CC0201_HD,0201_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0201,CC0201_HD,0201_CC)
      ("Source Package" CAP_NP_0)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -2441,15 +2405,15 @@
    (place C165
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" CC0201)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 01060757)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP_0)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -2458,7 +2422,7 @@
    (place C168
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 01082C77)
@@ -2475,15 +2439,15 @@
    (place C169
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 01082BED)
      (HEIGHT 0.33MM)
-     (FPLIST CC0201,CC0201_HD,0201_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0201,CC0201_HD,0201_CC)
      ("Source Package" CAP_NP_0)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -2497,20 +2461,35 @@
      (DESCRIPTION "RES MF 68.0 OHM  1/10W 1% 0603")
      (timestamp 0107EE05)
      (HEIGHT 0.55MM)
-     (MFG_NAME01 "KOA SPEER")
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST RC0603_OV,RC0603,0603_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "KOA SPEER")
      ("Source Package" RES_0)
      (Tolerance 1%)
      (AGILE_PN "470-77892")
      (MFG_PN01 RK73H1JTTD68R0F)
      (Value 10.k/5%))))
+  (component CONN_HDR_22
+   (place JP1
+    (property 
+     ("PCB Footprint" "MICRO-LOCK-10")
+     (CLASS IO)
+     (DESCRIPTION "HDR 1x3 TH 100MIL SP 343H AU 100L")
+     (timestamp 01097D4D)
+     (HEIGHT 8.72MM)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 SAMTEC)
+     ("Source Package" CONN_HDR_22)
+     (AGILE_PN "210-80734")
+     (MFG_PN01 "TSW-103-07-F-S")
+     (Value CON12))))
   (component CAP_NP
    (place C80
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 008411E0)
@@ -2528,15 +2507,15 @@
    (place C140
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" CC0201)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 010A519E)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -2562,15 +2541,15 @@
    (place C141
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" CC0201)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 010A5523)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -2584,10 +2563,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FE39C5)
      (HEIGHT 0.33MM)
-     (FPLIST CC0201,CC0201_HD,0201_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0201,CC0201_HD,0201_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -2601,10 +2580,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC24D)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -2613,7 +2592,7 @@
    (place C142
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" CC0201)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 010A5862)
@@ -2627,41 +2606,41 @@
      (AGILE_PN "150-78881")
      (MFG_PN01 C0603X5R1C104K)
      (Value 0.1uF)))
-   (place C110
-    (property 
-     (VOLTAGE 50V)
-     ("PCB Footprint" C0402)
-     (CLASS DISCRETE)
-     (DESCRIPTION "CAP CER 1000PF 50V 5% C0G 0402")
-     (timestamp 008430FA)
-     (HEIGHT 0.55MM)
-     (FPLIST CC0805_OV,CC0805,0805_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
-     (MFG_NAME01 MURATA)
-     ("Source Package" CAP_NP)
-     (Tolerance 5%)
-     (AGILE_PN "150-76334")
-     (MFG_PN01 GRM1555C1H102JA01D)
-     (Value 1000pF)))
    (place C83
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00840D2C)
      (HEIGHT 0.9mm)
-     (FPLIST CC0603_OV,CC0603,0603_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30185")
-     (MFG_PN01 0603X105K250SNT)
      (TOL 10%)
+     (MFG_PN01 0603X105K250SNT)
      (Value 1uF)))
+   (place C110
+    (property 
+     (VOLTAGE 16V)
+     ("PCB Footprint" CC0201)
+     (CLASS DISCRETE)
+     (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
+     (timestamp 00837854)
+     (HEIGHT 0.33MM)
+     (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
+     ("Source Package" CAP_NP)
+     (Tolerance 10%)
+     (AGILE_PN "150-78881")
+     (MFG_PN01 C0603X5R1C104K)
+     (Value 0.1uF)))
    (place C51
     (property 
      (VOLTAGE 16V)
@@ -2670,10 +2649,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC23D)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -2703,7 +2682,7 @@
    (place C84
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 010203B3)
@@ -2721,7 +2700,7 @@
    (place C111
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 007ECF9F)
@@ -2744,10 +2723,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC229)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -2761,17 +2740,17 @@
      (DESCRIPTION "CAP CER 22PF 50V 5% C0G 0402")
      (timestamp 010A4043)
      (HEIGHT 0.635MM)
-     (FPLIST CC0402_25,CC0402_HD,0402_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 AVX)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0402_25,CC0402_HD,0402_CC)
      ("Source Package" CAP_NP)
      (Tolerance 5%)
-     (ROOM RGMII_PHY)
-     (PRIORITY_PN "021-00234")
      (AGILE_PN "150-75266")
-     (SIGNAL_MODEL DEFAULT_CAPACITOR_22pF_2_1)
+     (PRIORITY_PN "021-00234")
+     (ROOM RGMII_PHY)
      (MFG_PN01 04025A220JAT2A)
+     (SIGNAL_MODEL DEFAULT_CAPACITOR_22pF_2_1)
      (Value 47PF)
      (WVDC 50V)))
    (place C112
@@ -2782,10 +2761,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FFA973)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -2794,20 +2773,20 @@
    (place C85
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 0084000B)
      (HEIGHT 0.9mm)
-     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0603_OV,CC0603,0603_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30185")
-     (TOL 10%)
      (MFG_PN01 0603X105K250SNT)
+     (TOL 10%)
      (Value 1uF)))
    (place C53
     (property 
@@ -2817,15 +2796,32 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC219)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
      (MFG_PN01 C0603X5R1C104K)
      (Value 0.1uF)))
+   (place C177
+    (property 
+     (VOLTAGE 10V)
+     ("PCB Footprint" C0603)
+     (CLASS DISCRETE)
+     (DESCRIPTION "CAP CER 47UF 10V 10% X7R 1210")
+     (timestamp 010BC571)
+     (HEIGHT "2.7 mm")
+     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC1210,1210_CC)
+     ("Source Package" CAP_NP)
+     (Tolerance 10%)
+     (AGILE_PN "150-30186")
+     (MFG_PN01 1210X476K100SNT)
+     (Value 10uF)))
    (place C145
     (property 
      (VOLTAGE 50V)
@@ -2855,10 +2851,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FFA812)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -2867,7 +2863,7 @@
    (place C86
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 0083E521)
@@ -2890,14 +2886,31 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC1F1)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
      (MFG_PN01 C0603X5R1C104K)
+     (Value 0.1uF)))
+   (place C178
+    (property 
+     (VOLTAGE 25V)
+     ("PCB Footprint" C0402)
+     (CLASS DISCRETE)
+     (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
+     (timestamp 010BC579)
+     (HEIGHT 0.9mm)
+     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
+     ("Source Package" CAP_NP)
+     (Tolerance 10%)
+     (AGILE_PN "150-30185")
+     (MFG_PN01 0603X105K250SNT)
      (Value 0.1uF)))
    (place C146
     (property 
@@ -2907,17 +2920,17 @@
      (DESCRIPTION "CAP CER 22PF 50V 5% C0G 0402")
      (timestamp 010A4345)
      (HEIGHT 0.635MM)
-     (MFG_NAME01 AVX)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0402_25,CC0402_HD,0402_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 AVX)
      ("Source Package" CAP_NP)
      (Tolerance 5%)
-     (AGILE_PN "150-75266")
-     (PRIORITY_PN "021-00234")
      (ROOM RGMII_PHY)
-     (MFG_PN01 04025A220JAT2A)
+     (PRIORITY_PN "021-00234")
+     (AGILE_PN "150-75266")
      (SIGNAL_MODEL DEFAULT_CAPACITOR_22pF_2_1)
+     (MFG_PN01 04025A220JAT2A)
      (Value 100NF)
      (WVDC 50V)))
    (place C87
@@ -2945,10 +2958,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FFA6B4)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -2962,14 +2975,31 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC1D9)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
      (MFG_PN01 C0603X5R1C104K)
+     (Value 0.1uF)))
+   (place C179
+    (property 
+     (VOLTAGE 25V)
+     ("PCB Footprint" C0402)
+     (CLASS DISCRETE)
+     (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
+     (timestamp 010BC5B0)
+     (HEIGHT 0.9mm)
+     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
+     ("Source Package" CAP_NP)
+     (Tolerance 10%)
+     (AGILE_PN "150-30185")
+     (MFG_PN01 0603X105K250SNT)
      (Value 0.1uF)))
    (place C147
     (property 
@@ -3000,10 +3030,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FFF2C4)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3017,10 +3047,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC6BE)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3034,10 +3064,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC1C9)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3051,19 +3081,19 @@
      (DESCRIPTION "CAP CER 22PF 50V 5% C0G 0402")
      (timestamp 010A13B5)
      (HEIGHT 0.635MM)
-     (MFG_NAME01 AVX)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0402_25,CC0402_HD,0402_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 AVX)
      ("Source Package" CAP_NP)
      (Tolerance 5%)
-     (AGILE_PN "150-75266")
-     (PRIORITY_PN "021-00234")
      (ROOM RGMII_PHY)
-     (SIGNAL_MODEL DEFAULT_CAPACITOR_22pF_2_1)
+     (PRIORITY_PN "021-00234")
+     (AGILE_PN "150-75266")
      (MFG_PN01 04025A220JAT2A)
+     (SIGNAL_MODEL DEFAULT_CAPACITOR_22pF_2_1)
      (Value 22PF)
-     (WVDC 50V)))
+     (WVDC 16V)))
    (place C89
     (property 
      (VOLTAGE 16V)
@@ -3072,10 +3102,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FFF2D4)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3089,10 +3119,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC6AE)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3106,10 +3136,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC1B9)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3123,17 +3153,17 @@
      (DESCRIPTION "CAP CER 22PF 50V 5% C0G 0402")
      (timestamp 010A13AC)
      (HEIGHT 0.635MM)
-     (FPLIST CC0402_25,CC0402_HD,0402_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 AVX)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0402_25,CC0402_HD,0402_CC)
      ("Source Package" CAP_NP)
      (Tolerance 5%)
-     (ROOM RGMII_PHY)
-     (PRIORITY_PN "021-00234")
      (AGILE_PN "150-75266")
-     (SIGNAL_MODEL DEFAULT_CAPACITOR_22pF_2_1)
+     (PRIORITY_PN "021-00234")
+     (ROOM RGMII_PHY)
      (MFG_PN01 04025A220JAT2A)
+     (SIGNAL_MODEL DEFAULT_CAPACITOR_22pF_2_1)
      (Value 22PF)
      (WVDC 50V)))
    (place C117
@@ -3144,10 +3174,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC69E)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3161,10 +3191,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC2C9)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3178,10 +3208,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC68E)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3195,10 +3225,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC2B9)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3212,10 +3242,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FF9DDF)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3224,15 +3254,15 @@
    (place C29
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" CC0201)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FE9F49)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3240,7 +3270,7 @@
      (Value 0.1uF)))
    (place C1
     (property 
-     ("PCB Footprint" "C-0805")
+     ("PCB Footprint" C0603)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 4.7UF 25V 10% X5R 0805")
      (timestamp 00FEEA69)
@@ -3256,15 +3286,15 @@
    (place C2
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00FEDD5D)
      (HEIGHT 0.9mm)
-     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0603_OV,CC0603,0603_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30185")
@@ -3273,7 +3303,7 @@
    (place C3
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00FED002)
@@ -3289,7 +3319,7 @@
      (Value 1uF)))
    (place C4
     (property 
-     ("PCB Footprint" "C-0805")
+     ("PCB Footprint" C0603)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 4.7UF 25V 10% X5R 0805")
      (timestamp 00FEEA27)
@@ -3305,7 +3335,7 @@
    (place C5
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00FEDD45)
@@ -3322,7 +3352,7 @@
    (place C6
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00FECFE2)
@@ -3339,15 +3369,15 @@
    (place C7
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" CC0201)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FEDBDD)
      (HEIGHT 0.33MM)
-     (FPLIST CC0402_25,CC0402_HD,0402_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0402_25,CC0402_HD,0402_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3356,15 +3386,15 @@
    (place C8
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" CC0201)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FECEB6)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3373,15 +3403,49 @@
    (place C9
     (property 
      (VOLTAGE 10V)
-     ("PCB Footprint" CC1210)
+     ("PCB Footprint" 1206)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 47UF 10V 10% X7R 1210")
      (timestamp 00FEDCA1)
      (HEIGHT "2.7 mm")
+     (FPLIST CC1210,1210_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     ("Source Package" CAP_NP)
+     (Tolerance 10%)
+     (AGILE_PN "150-30186")
+     (MFG_PN01 1210X476K100SNT)
+     (Value 47uF)))
+   (place C180
+    (property 
+     (VOLTAGE 25V)
+     ("PCB Footprint" C0402)
+     (CLASS DISCRETE)
+     (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
+     (timestamp 010BC5DE)
+     (HEIGHT 0.9mm)
      (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
      (ROHS Yes)
      (CAD_APPROVED Yes)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
+     ("Source Package" CAP_NP)
+     (Tolerance 10%)
+     (AGILE_PN "150-30185")
+     (MFG_PN01 0603X105K250SNT)
+     (Value 0.1uF)))
+   (place C181
+    (property 
+     (VOLTAGE 10V)
+     ("PCB Footprint" 1206)
+     (CLASS DISCRETE)
+     (DESCRIPTION "CAP CER 47UF 10V 10% X7R 1210")
+     (timestamp 010BC5E6)
+     (HEIGHT "2.7 mm")
      (FPLIST CC1210,1210_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30186")
@@ -3395,15 +3459,32 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FFF2E4)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
      (MFG_PN01 C0603X5R1C104K)
      (Value 0.1uF)))
+   (place C182
+    (property 
+     (VOLTAGE 25V)
+     ("PCB Footprint" C0402)
+     (CLASS DISCRETE)
+     (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
+     (timestamp 010CD605)
+     (HEIGHT 0.9mm)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     ("Source Package" CAP_NP)
+     (Tolerance 10%)
+     (AGILE_PN "150-30185")
+     (MFG_PN01 0603X105K250SNT)
+     (Value 1uF)))
    (place C91
     (property 
      (VOLTAGE 16V)
@@ -3412,10 +3493,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FFF2F4)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3424,7 +3505,7 @@
    (place C150
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00FE2FE2)
@@ -3439,6 +3520,23 @@
      (MFG_PN01 0603X105K250SNT)
      (TOL 10%)
      (Value 1uF)))
+   (place C183
+    (property 
+     (VOLTAGE 25V)
+     ("PCB Footprint" C0402)
+     (CLASS DISCRETE)
+     (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
+     (timestamp 010CDDD9)
+     (HEIGHT 0.9mm)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     ("Source Package" CAP_NP)
+     (Tolerance 10%)
+     (AGILE_PN "150-30185")
+     (MFG_PN01 0603X105K250SNT)
+     (Value 1uF)))
    (place C92
     (property 
      (VOLTAGE 16V)
@@ -3447,10 +3545,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FFF304)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3481,15 +3579,33 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC2A9)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
      (MFG_PN01 C0603X5R1C104K)
      (Value 0.1uF)))
+   (place C184
+    (property 
+     (VOLTAGE 10v)
+     ("PCB Footprint" C0402)
+     (CLASS DISCRETE)
+     (DESCRIPTION "CAP CER 10UF 10V 10% X5R 0603")
+     (timestamp 010DDD40)
+     (HEIGHT 1.016MM)
+     (FPLIST CC0805_OV,CC0805,0805_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
+     ("Source Package" CAP_NP)
+     (Tolerance 10%)
+     (AGILE_PN "150-78675")
+     (MFG_PN01 C1608X5R1A106K)
+     (TOL 10%)
+     (Value 100nF)))
    (place C120
     (property 
      (VOLTAGE 16V)
@@ -3498,10 +3614,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FF9FBF)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3515,10 +3631,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 008390BE)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3532,19 +3648,37 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 007EC299)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
      (MFG_PN01 C0603X5R1C104K)
      (Value 0.1uF)))
+   (place C185
+    (property 
+     (VOLTAGE 10v)
+     ("PCB Footprint" C0402)
+     (CLASS DISCRETE)
+     (DESCRIPTION "CAP CER 10UF 10V 10% X5R 0603")
+     (timestamp 010DE042)
+     (HEIGHT 1.016MM)
+     (FPLIST CC0805_OV,CC0805,0805_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
+     ("Source Package" CAP_NP)
+     (Tolerance 10%)
+     (AGILE_PN "150-78675")
+     (MFG_PN01 C1608X5R1A106K)
+     (TOL 10%)
+     (Value 100nF)))
    (place C153
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" R0402)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 01026F75)
@@ -3566,10 +3700,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FFA19E)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3583,10 +3717,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FF97EB)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3617,32 +3751,50 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 008390CE)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
      (MFG_PN01 C0603X5R1C104K)
      (Value 0.1uF)))
+   (place C186
+    (property 
+     (VOLTAGE 10v)
+     ("PCB Footprint" C0402)
+     (CLASS DISCRETE)
+     (DESCRIPTION "CAP CER 10UF 10V 10% X5R 0603")
+     (timestamp 010DE1AB)
+     (HEIGHT 1.016MM)
+     (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0805_OV,CC0805,0805_CC)
+     ("Source Package" CAP_NP)
+     (Tolerance 10%)
+     (AGILE_PN "150-78675")
+     (TOL 10%)
+     (MFG_PN01 C1608X5R1A106K)
+     (Value 100nF)))
    (place C154
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 01026F6B)
      (HEIGHT 0.9mm)
-     (FPLIST CC0603_OV,CC0603,0603_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30185")
-     (MFG_PN01 0603X105K250SNT)
      (TOL 10%)
+     (MFG_PN01 0603X105K250SNT)
      (Value 1uF)))
    (place C63
     (property 
@@ -3652,10 +3804,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FF99C4)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3664,7 +3816,7 @@
    (place C31
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00FE9E16)
@@ -3699,7 +3851,7 @@
    (place C122
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 0083869E)
@@ -3717,7 +3869,7 @@
    (place C155
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" R0402)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 01026F57)
@@ -3734,20 +3886,20 @@
    (place C32
     (property 
      (VOLTAGE 10v)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 10UF 10V 10% X5R 0603")
      (timestamp 00FE9CEF)
      (HEIGHT 1.016MM)
-     (FPLIST CC0805_OV,CC0805,0805_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0805_OV,CC0805,0805_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78675")
-     (MFG_PN01 C1608X5R1A106K)
      (TOL 10%)
+     (MFG_PN01 C1608X5R1A106K)
      (Value 10uF)))
    (place C64
     (property 
@@ -3757,15 +3909,15 @@
      (DESCRIPTION "CAP CER 1000PF 50V 5% C0G 0402")
      (timestamp 008553CE)
      (HEIGHT 0.55MM)
-     (MFG_NAME01 MURATA)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0402_25,CC0402_HD,0402_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 MURATA)
      ("Source Package" CAP_NP)
      (Tolerance 5%)
      (AGILE_PN "150-76334")
-     (TOL 10%)
      (MFG_PN01 GRM1555C1H102JA01D)
+     (TOL 10%)
      (Value 1000pF)))
    (place C96
     (property 
@@ -3775,10 +3927,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 008390EE)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3804,25 +3956,25 @@
    (place C156
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" R0402)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 01026F4F)
      (HEIGHT 0.9mm)
-     (FPLIST CC0603_OV,CC0603,0603_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30185")
-     (MFG_PN01 0603X105K250SNT)
      (TOL 10%)
+     (MFG_PN01 0603X105K250SNT)
      (Value 1uF)))
    (place C124
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00FF4B18)
@@ -3879,10 +4031,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 008390FE)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3896,10 +4048,10 @@
      (DESCRIPTION "CAP CER 10UF 10V 10% X5R 0603")
      (timestamp 0085E352)
      (HEIGHT 1.016MM)
-     (FPLIST CC0805_OV,CC0805,0805_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0805_OV,CC0805,0805_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78675")
@@ -3913,10 +4065,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 0083A831)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3930,10 +4082,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 0083910E)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -3947,15 +4099,15 @@
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 01047D81)
      (HEIGHT 0.9mm)
-     (FPLIST CC0603_OV,CC0603,0603_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30185")
-     (MFG_PN01 0603X105K250SNT)
      (TOL 10%)
+     (MFG_PN01 0603X105K250SNT)
      (Value 10uF)))
    (place C35
     (property 
@@ -3965,15 +4117,15 @@
      (DESCRIPTION "CAP CER 10UF 10V 10% X5R 0603")
      (timestamp 00FE7FE0)
      (HEIGHT 1.016MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0805_OV,CC0805,0805_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78675")
-     (TOL 10%)
      (MFG_PN01 C1608X5R1A106K)
+     (TOL 10%)
      (Value 10uF)))
    (place C126
     (property 
@@ -3996,7 +4148,7 @@
    (place C99
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00842A37)
@@ -4019,15 +4171,15 @@
      (DESCRIPTION "CAP CER 10UF 10V 10% X5R 0603")
      (timestamp 007EBDBB)
      (HEIGHT 1.016MM)
-     (FPLIST CC0805_OV,CC0805,0805_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0805_OV,CC0805,0805_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78675")
-     (MFG_PN01 C1608X5R1A106K)
      (TOL 10%)
+     (MFG_PN01 C1608X5R1A106K)
      (Value 10uF)))
    (place C159
     (property 
@@ -4073,10 +4225,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FAB095)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -4108,15 +4260,15 @@
      (DESCRIPTION "CAP CER 10UF 10V 10% X5R 0603")
      (timestamp 00FE7FC0)
      (HEIGHT 1.016MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0805_OV,CC0805,0805_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78675")
-     (TOL 10%)
      (MFG_PN01 C1608X5R1A106K)
+     (TOL 10%)
      (Value 10uF)))
    (place C128
     (property 
@@ -4137,7 +4289,7 @@
      (Value 0.1uF)))
    (place C69
     (property 
-     ("PCB Footprint" "C-0805")
+     ("PCB Footprint" C0603)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 4.7UF 25V 10% X5R 0805")
      (timestamp 007EBD5B)
@@ -4172,20 +4324,20 @@
    (place C129
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00857C7D)
      (HEIGHT 0.9mm)
-     (FPLIST CC0603_OV,CC0603,0603_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30185")
-     (MFG_PN01 0603X105K250SNT)
      (TOL 10%)
+     (MFG_PN01 0603X105K250SNT)
      (Value 1uF)))
    (place C39
     (property 
@@ -4207,7 +4359,7 @@
    (place C160
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" R0402)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 0104ADB2)
@@ -4224,41 +4376,41 @@
    (place C161
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" R0402)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 010793C9)
      (HEIGHT 0.9mm)
-     (FPLIST CC0603_OV,CC0603,0603_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30185")
-     (MFG_PN01 0603X105K250SNT)
      (TOL 10%)
+     (MFG_PN01 0603X105K250SNT)
      (Value 10NF)))
    (place C70
     (property 
-     ("PCB Footprint" "C-0805")
+     ("PCB Footprint" C0603)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 4.7UF 25V 10% X5R 0805")
      (timestamp 007EBD4B)
      (HEIGHT "1.397 MM")
-     (MFG_NAME01 "VENKEL COMPANY")
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0805_OV,CC0805,0805_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "VENKEL COMPANY")
      ("Source Package" CAP_NP)
      (AGILE_PN "150-30266")
-     (TOL 10%)
      (MFG_PN01 "C0805X5R250-475KNP")
+     (TOL 10%)
      (Value 4.7UF)))
    (place C162
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" R0402)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 010780FF)
@@ -4292,19 +4444,19 @@
      (Value 0.1uF)))
    (place C71
     (property 
-     ("PCB Footprint" "C-0805")
+     ("PCB Footprint" C0603)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 4.7UF 25V 10% X5R 0805")
      (timestamp 007EBD3B)
      (HEIGHT "1.397 MM")
-     (MFG_NAME01 "VENKEL COMPANY")
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0805_OV,CC0805,0805_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "VENKEL COMPANY")
      ("Source Package" CAP_NP)
      (AGILE_PN "150-30266")
-     (TOL 10%)
      (MFG_PN01 "C0805X5R250-475KNP")
+     (TOL 10%)
      (Value 4.7UF)))
    (place C40
     (property 
@@ -4326,7 +4478,7 @@
    (place C131
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00857E0B)
@@ -4343,19 +4495,19 @@
      (Value 1uF)))
    (place C72
     (property 
-     ("PCB Footprint" "C-0805")
+     ("PCB Footprint" C0603)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 4.7UF 25V 10% X5R 0805")
      (timestamp 007EBD1B)
      (HEIGHT "1.397 MM")
-     (MFG_NAME01 "VENKEL COMPANY")
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0805_OV,CC0805,0805_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "VENKEL COMPANY")
      ("Source Package" CAP_NP)
      (AGILE_PN "150-30266")
-     (TOL 10%)
      (MFG_PN01 "C0805X5R250-475KNP")
+     (TOL 10%)
      (Value 4.7UF)))
    (place C132
     (property 
@@ -4365,10 +4517,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FF87BD)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -4382,10 +4534,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FEA187)
      (HEIGHT 0.33MM)
-     (FPLIST CC0201,CC0201_HD,0201_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0201,CC0201_HD,0201_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -4399,10 +4551,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00842A69)
      (HEIGHT 0.33MM)
-     (FPLIST CC0201,CC0201_HD,0201_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 TDK)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0201,CC0201_HD,0201_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -4416,10 +4568,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 0083D70C)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -4428,7 +4580,7 @@
    (place C133
     (property 
      (VOLTAGE 10v)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 10UF 10V 10% X5R 0603")
      (timestamp 0107EDBA)
@@ -4446,7 +4598,7 @@
    (place C10
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00FEDCCD)
@@ -4480,7 +4632,7 @@
    (place C101
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00843275)
@@ -4498,25 +4650,25 @@
    (place C74
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 0083D6FC)
      (HEIGHT 0.9mm)
-     (FPLIST CC0603_OV,CC0603,0603_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30185")
-     (MFG_PN01 0603X105K250SNT)
      (TOL 10%)
+     (MFG_PN01 0603X105K250SNT)
      (Value 1uF)))
    (place C134
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" CC0201)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 010A586F)
@@ -4533,7 +4685,7 @@
    (place C166
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 01060764)
@@ -4551,20 +4703,20 @@
    (place C75
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 01000B8A)
      (HEIGHT 0.9mm)
-     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0603_OV,CC0603,0603_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30185")
-     (TOL 10%)
      (MFG_PN01 0603X105K250SNT)
+     (TOL 10%)
      (Value 1uF)))
    (place C43
     (property 
@@ -4574,10 +4726,10 @@
      (DESCRIPTION "CAP CER 0.01uF 10V 10% X7R 0201")
      (timestamp 00FEE067)
      (HEIGHT 0.33MM)
-     (FPLIST CC0402_25,CC0402_HD,0402_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 AVX)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0402_25,CC0402_HD,0402_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-79532")
@@ -4586,7 +4738,7 @@
    (place C11
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00FEDCB5)
@@ -4654,19 +4806,19 @@
      (Value 470uF_35v)))
    (place C103
     (property 
-     ("PCB Footprint" "C-0805")
+     ("PCB Footprint" C0603)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 4.7UF 25V 10% X5R 0805")
      (timestamp 00FFFD49)
      (HEIGHT "1.397 MM")
-     (FPLIST CC0805_OV,CC0805,0805_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "VENKEL COMPANY")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0805_OV,CC0805,0805_CC)
      ("Source Package" CAP_NP)
      (AGILE_PN "150-30266")
-     (MFG_PN01 "C0805X5R250-475KNP")
      (TOL 10%)
+     (MFG_PN01 "C0805X5R250-475KNP")
      (Value 4.7UF)))
    (place C44
     (property 
@@ -4676,10 +4828,10 @@
      (DESCRIPTION "CAP CER 0.01uF 10V 10% X7R 0201")
      (timestamp 00FEE282)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 AVX)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0402_25,CC0402_HD,0402_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 AVX)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-79532")
@@ -4688,15 +4840,15 @@
    (place C12
     (property 
      (VOLTAGE 10V)
-     ("PCB Footprint" CC1210)
+     ("PCB Footprint" 1206)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 47UF 10V 10% X7R 1210")
      (timestamp 00FECF52)
      (HEIGHT "2.7 mm")
-     (FPLIST CC1210,1210_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC1210,1210_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30186")
@@ -4705,33 +4857,33 @@
    (place C76
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 0083C0C4)
      (HEIGHT 0.9mm)
-     (FPLIST CC0603_OV,CC0603,0603_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30185")
-     (MFG_PN01 0603X105K250SNT)
      (TOL 10%)
+     (MFG_PN01 0603X105K250SNT)
      (Value 1uF)))
    (place C136
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" CC0201)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 010A486B)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -4745,10 +4897,10 @@
      (DESCRIPTION "CAP CER 0.01uF 10V 10% X7R 0201")
      (timestamp 00FEE1D3)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 AVX)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0402_25,CC0402_HD,0402_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 AVX)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-79532")
@@ -4757,15 +4909,15 @@
    (place C13
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
-     (timestamp 00FECF62)
+     (timestamp 00FECF82)
      (HEIGHT 0.9mm)
-     (FPLIST CC1206_OV,CC1206,1206_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC1206_OV,CC1206,1206_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30185")
@@ -4796,10 +4948,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00837BDA)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -4808,7 +4960,7 @@
    (place C137
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" CC0201)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 010A4B3B)
@@ -4830,10 +4982,10 @@
      (DESCRIPTION "CAP CER 0.01uF 10V 10% X7R 0201")
      (timestamp 00FEE11C)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 AVX)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0402_25,CC0402_HD,0402_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 AVX)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-79532")
@@ -4842,15 +4994,15 @@
    (place C14
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
-     (timestamp 00FEDBF1)
+     (timestamp 00FECF62)
      (HEIGHT 0.9mm)
-     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
-     (ROHS Yes)
+     (FPLIST CC1206_OV,CC1206,1206_CC)
      (CAD_APPROVED Yes)
-     (FPLIST CC0603_OV,CC0603,0603_CC)
+     (ROHS Yes)
+     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30185")
@@ -4859,7 +5011,7 @@
    (place C78
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00FE3B1C)
@@ -4877,25 +5029,25 @@
    (place C105
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
-     (timestamp 00837830)
+     (timestamp 008430CA)
      (HEIGHT 0.9mm)
-     (FPLIST CC0603_OV,CC0603,0603_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30185")
-     (MFG_PN01 0603X105K250SNT)
      (TOL 10%)
+     (MFG_PN01 0603X105K250SNT)
      (Value 1uF)))
    (place C138
     (property 
      (VOLTAGE 16V)
-     ("PCB Footprint" CC0201)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 010A5855)
@@ -4912,15 +5064,15 @@
    (place C15
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
-     (timestamp 00FECF82)
+     (timestamp 00FEDBF1)
      (HEIGHT 0.9mm)
-     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
-     (ROHS Yes)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
      (CAD_APPROVED Yes)
-     (FPLIST CC1206_OV,CC1206,1206_CC)
+     (ROHS Yes)
+     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-30185")
@@ -4934,10 +5086,10 @@
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
      (timestamp 00FE74A7)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -4946,7 +5098,7 @@
    (place C79
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00FE09A5)
@@ -4967,12 +5119,12 @@
      ("PCB Footprint" CC0201)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
-     (timestamp 00837854)
+     (timestamp 008430DA)
      (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0201,CC0201_HD,0201_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 TDK)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
      (AGILE_PN "150-78881")
@@ -5003,10 +5155,10 @@
      (DESCRIPTION "CAP CER 4.7PF 50V 5% C0G 0603")
      (timestamp 00FEDC5D)
      (HEIGHT 0.87MM)
-     (MFG_NAME01 Kemet)
-     (ROHS Yes)
-     (CAD_APPROVED Yes)
      (FPLIST CC0603_OV,CC0603,0603_CC)
+     (CAD_APPROVED Yes)
+     (ROHS Yes)
+     (MFG_NAME01 Kemet)
      ("Source Package" CAP_NP)
      (Tolerance 5%)
      (AGILE_PN "150-79418")
@@ -5032,22 +5184,21 @@
      (Value 10uF)))
    (place C107
     (property 
-     (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     (VOLTAGE 10V)
+     ("PCB Footprint" CC0201)
      (CLASS DISCRETE)
-     (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
-     (timestamp 008430CA)
-     (HEIGHT 0.9mm)
-     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
+     (DESCRIPTION "CAP CER 0.01uF 10V 10% X7R 0201")
+     (timestamp 008430EA)
+     (HEIGHT 0.33MM)
+     (MFG_NAME01 AVX)
      (ROHS Yes)
      (CAD_APPROVED Yes)
-     (FPLIST CC0603_OV,CC0603,0603_CC)
+     (FPLIST CC0805_OV,CC0805,0805_CC)
      ("Source Package" CAP_NP)
      (Tolerance 10%)
-     (AGILE_PN "150-30185")
-     (TOL 10%)
-     (MFG_PN01 0603X105K250SNT)
-     (Value 1uF)))
+     (AGILE_PN "150-79532")
+     (MFG_PN01 0201ZC103KAT2A)
+     (Value 0.01uF)))
    (place C49
     (property 
      (VOLTAGE 16V)
@@ -5069,7 +5220,7 @@
    (place C17
     (property 
      (VOLTAGE 25V)
-     ("PCB Footprint" C0603)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
      (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
      (timestamp 00FECED2)
@@ -5085,21 +5236,21 @@
      (Value 1uF)))
    (place C108
     (property 
-     (VOLTAGE 16V)
-     ("PCB Footprint" CC0201)
+     (VOLTAGE 50V)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
-     (DESCRIPTION "CAP CER 0.1UF 16V 10% X5R 0201")
-     (timestamp 008430DA)
-     (HEIGHT 0.33MM)
-     (MFG_NAME01 TDK)
+     (DESCRIPTION "CAP CER 1000PF 50V 5% C0G 0402")
+     (timestamp 008430FA)
+     (HEIGHT 0.55MM)
+     (MFG_NAME01 MURATA)
      (ROHS Yes)
      (CAD_APPROVED Yes)
-     (FPLIST CC0201,CC0201_HD,0201_CC)
+     (FPLIST CC0805_OV,CC0805,0805_CC)
      ("Source Package" CAP_NP)
-     (Tolerance 10%)
-     (AGILE_PN "150-78881")
-     (MFG_PN01 C0603X5R1C104K)
-     (Value 0.1uF)))
+     (Tolerance 5%)
+     (AGILE_PN "150-76334")
+     (MFG_PN01 GRM1555C1H102JA01D)
+     (Value 1000pF)))
    (place C18
     (property 
      (VOLTAGE 50V)
@@ -5108,10 +5259,10 @@
      (DESCRIPTION "CAP CER 4.7PF 50V 5% C0G 0603")
      (timestamp 00FECF16)
      (HEIGHT 0.87MM)
-     (FPLIST CC0603_OV,CC0603,0603_CC)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 Kemet)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
      ("Source Package" CAP_NP)
      (Tolerance 5%)
      (AGILE_PN "150-79418")
@@ -5119,21 +5270,22 @@
      (Value 4.7pF)))
    (place C109
     (property 
-     (VOLTAGE 10V)
-     ("PCB Footprint" CC0201)
+     (VOLTAGE 25V)
+     ("PCB Footprint" C0402)
      (CLASS DISCRETE)
-     (DESCRIPTION "CAP CER 0.01uF 10V 10% X7R 0201")
-     (timestamp 008430EA)
-     (HEIGHT 0.33MM)
-     (FPLIST CC0805_OV,CC0805,0805_CC)
+     (DESCRIPTION "CAP CER 1UF 25V 10% X7R 0603")
+     (timestamp 00837830)
+     (HEIGHT 0.9mm)
+     (FPLIST CC0603_OV,CC0603,0603_CC)
      (CAD_APPROVED Yes)
      (ROHS Yes)
-     (MFG_NAME01 AVX)
+     (MFG_NAME01 "CAPAX TECHNOLOGIES INC.")
      ("Source Package" CAP_NP)
      (Tolerance 10%)
-     (AGILE_PN "150-79532")
-     (MFG_PN01 0201ZC103KAT2A)
-     (Value 0.01uF))))
+     (AGILE_PN "150-30185")
+     (MFG_PN01 0603X105K250SNT)
+     (TOL 10%)
+     (Value 1uF))))
   (component LED_5
    (place DS4
     (property 
@@ -5142,13 +5294,13 @@
      (DESCRIPTION "LED GRN -- 25MA SMT 1206")
      (timestamp 0109D1C4)
      (HEIGHT 0.75mm)
-     (FPLIST 1206ld,1206ld_1A2C)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 KINGBRIGHT)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST 1206ld,1206ld_1A2C)
      ("Source Package" LED_5)
-     (AGILE_PN "370-75142")
      (PRIORITY_PN "048-01001")
+     (AGILE_PN "370-75142")
      (MFG_PN01 APT3216SGC)
      (Value IN5819)))
    (place DS5
@@ -5174,13 +5326,13 @@
      (DESCRIPTION "LED GRN -- 25MA SMT 1206")
      (timestamp 010A8F9B)
      (HEIGHT 0.75mm)
-     (FPLIST 1206ld,1206ld_1A2C)
-     (CAD_APPROVED Yes)
-     (ROHS Yes)
      (MFG_NAME01 KINGBRIGHT)
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     (FPLIST 1206ld,1206ld_1A2C)
      ("Source Package" LED_5)
-     (AGILE_PN "370-75142")
      (PRIORITY_PN "048-01001")
+     (AGILE_PN "370-75142")
      (MFG_PN01 APT3216SGC)
      (Value IN5819)))
    (place DS7
@@ -5214,8 +5366,175 @@
      (AGILE_PN "370-75142")
      (PRIORITY_PN "048-01001")
      (MFG_PN01 APT3216SGC)
-     (Value IN5819)))))
+     (Value IN5819))))
+  (component LT8614_QFN18_27
+   (place U14
+    (property 
+     ("PCB Footprint" DDC0006A_N)
+     (CLASS IC)
+     (DESCRIPTION "IC VREG STEP DOWN 200kHZ-3MHZ 0.97-41.8V 4A 3.4-42V QFN18")
+     (timestamp 010BC561)
+     (HEIGHT 0.8MM)
+     (MFG_NAME01 "Linear Technology")
+     (ROHS Yes)
+     (CAD_APPROVED Yes)
+     ("Source Package" LT8614_QFN18_27)
+     (AGILE_PN "312-81159")
+     (MFG_PN01 LT8614IUDC#PBF)
+     (Value TPS54308)))))
  (library
+  (image R0402
+   (property 
+    (sourcelib "\\\\ALINET\\ZH\\DIV\\SE\\PCB LIB\\ALI LIB VERSION 3.0\\ALI_ORCAD3.0-R.OLB")
+    (Prop "1/16W 5%")
+    (Price 0.005))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" 5V0_LR_REG)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N17548728)
+     (Order 1)
+     ("Is No Connect" False))))
+  (image LP5912_3P3_TRANS_0
+   (property 
+    (sourcelib D:\\PROJECTS\\RADAR\\RADAR_OE_EE\\02_HARDWARE_DESIGN\\VA18A010E\\VA18A010E.DSN)
+    (PSpiceTemplate "X^@REFDES %IN %EN %NC %OUT %PG %PAD %GND @MODEL")
+    (OriginalSymbolOrigin "(-50000,50000)")
+    (PIN_COUNT 7)
+    ("< Value >" "LP5912-0.9DRVT")
+    (Manufacturer "Texas Instruments")
+    (RoHS Y)
+    (CompType IC)
+    (MountType SMT)
+    (PackageReference DRV0006A)
+    ("Alternate PartNumber" "LP5912-0.9DRVT")
+    (PartNumber "LP5912-0.9DRVR")
+    (Application_BuildNumber *)
+    ("PCB Footprint" DRV0006A)
+    (DeviceNumbering Alpha)
+    (DeviceDesignator A)
+    (DevicesInPackage 1)
+    (DevicesInView 1)
+    (IsHeterogeneous False)
+    (PackageName "LP5912-0.9DRVT"))
+   (pin 999 1
+    (property 
+     (pinname OUT)
+     (pintype 7)
+     (Name OUT)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Power)
+     ("Net Name" 3V3_LR_REG)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname NC)
+     (pintype 4)
+     (Name NC)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 1)
+     ("Is No Connect" False)))
+   (pin 999 3
+    (property 
+     (pinname PG)
+     (pintype 2)
+     (Name PG)
+     (Number 3)
+     ("Swap Id" "-1")
+     (Type Output)
+     ("Net Name" PG)
+     (Order 2)
+     ("Is No Connect" False)))
+   (pin 999 4
+    (property 
+     (pinname EN)
+     (pintype 0)
+     (Name EN)
+     (Number 4)
+     ("Swap Id" "-1")
+     (Type Input)
+     ("Net Name" EN)
+     (Order 3)
+     ("Is No Connect" False)))
+   (pin 999 5
+    (property 
+     (pinname GND)
+     (pintype 7)
+     (Name GND)
+     (Number 5)
+     ("Swap Id" "-1")
+     (Type Power)
+     ("Net Name" GND)
+     (Order 4)
+     ("Is No Connect" False)))
+   (pin 999 6
+    (property 
+     (pinname IN)
+     (pintype 7)
+     (Name IN)
+     (Number 6)
+     ("Swap Id" "-1")
+     (Type Power)
+     ("Net Name" 5V0_LR_REG)
+     (Order 5)
+     ("Is No Connect" False)))
+   (pin 999 7
+    (property 
+     (pinname PAD)
+     (pintype 7)
+     (Name PAD)
+     (Number 7)
+     ("Swap Id" "-1")
+     (Type Power)
+     ("Net Name" GND)
+     (Order 6)
+     ("Is No Connect" False))))
+  (image INDUCTOR
+   (property 
+    (sourcelib Q:\\ORCADCIS\\SYMBOLS\\FCL_INDUCTOR.OLB)
+    (CLASS DISCRETE))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N17514792)
+     (Order 1)
+     ("Is No Connect" False))))
   (image R_3
    (property 
     (sourcelib "E:\\HOME_BOX_HD\\SPHE1506\\SPSTB_1506-144_DEMO_V10.DSN")
@@ -5315,6 +5634,76 @@
      (Type Input)
      (Order 2)
      ("Is No Connect" True))))
+  (image LT8614_QFN18_27
+   (property 
+    (sourcelib "D:\\项目\\HALL\\IMU\\VA1701B10E - 副本.DSN")
+    (CLASS IC))
+   (pin 999 1
+    (property 
+     (pinname GND)
+     (pintype 0)
+     (Name GND)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Input)
+     ("Net Name" GND)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 3
+    (property 
+     (pinname VIN)
+     (pintype 0)
+     (Name VIN)
+     (Number 3)
+     ("Swap Id" "-1")
+     (Type Input)
+     ("Net Name" 12V_SUPPLY)
+     (Order 1)
+     ("Is No Connect" False)))
+   (pin 999 6
+    (property 
+     (pinname BOOT)
+     (pintype 4)
+     (Name BOOT)
+     (Number 6)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N17548726)
+     (Order 2)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname SW)
+     (pintype 2)
+     (Name SW)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Output)
+     ("Net Name" N17548712)
+     (Order 3)
+     ("Is No Connect" False)))
+   (pin 999 5
+    (property 
+     (pinname EN)
+     (pintype 0)
+     (Name EN)
+     (Number 5)
+     ("Swap Id" "-1")
+     (Type Input)
+     ("Net Name" INTPUT)
+     (Order 4)
+     ("Is No Connect" False)))
+   (pin 999 4
+    (property 
+     (pinname FB)
+     (pintype 0)
+     (Name FB)
+     (Number 4)
+     ("Swap Id" "-1")
+     (Type Input)
+     ("Net Name" N17548728)
+     (Order 5)
+     ("Is No Connect" False))))
   (image MOSFET_P_S1_D4_3
    (property 
     (sourcelib "D:\\项目\\HALL\\新板资料\\SCH-29022_A1.DSN")
@@ -5351,6 +5740,32 @@
      (Type Input)
      ("Net Name" N17269832)
      (Order 2)
+     ("Is No Connect" False))))
+  (image BEAD
+   (property 
+    (sourcelib Q:\\ORCADCIS\\SYMBOLS\\FCL_INDUCTOR.OLB)
+    (CLASS DISCRETE))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" 3V3_SW_REG)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" 3V3_LR_REG)
+     (Order 1)
      ("Is No Connect" False))))
   (image MOSFET_P_S1_D4_7
    (property 
@@ -5462,78 +5877,6 @@
      (pintype 4)
      (Name 2)
      (Number 2)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" GND)
-     (Order 1)
-     ("Is No Connect" False))))
-  (image C0603
-   (property 
-    (sourcelib "\\\\ALINET\\ZH\\DIV\\SE\\PCB LIB\\ALI LIB VERSION 3.0\\ALI_ORCAD3.0-C.OLB")
-    (Prop "50V 10% "))
-   (pin 999 1
-    (property 
-     (pinname 1)
-     (pintype 4)
-     (Name 1)
-     (Number 1)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" N17201888)
-     (Order 0)
-     ("Is No Connect" False)))
-   (pin 999 2
-    (property 
-     (pinname 2)
-     (pintype 4)
-     (Name 2)
-     (Number 2)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" N17201995)
-     (Order 1)
-     ("Is No Connect" False))))
-  (image 10u/10V_0
-   (property 
-    (sourcelib "E:\\HOME_BOX_HD\\SPHE1506\\SPSTB_1506-144_DEMO_V10.DSN"))
-   (pin 999 1
-    (property 
-     (pinname 1)
-     (pintype 4)
-     (Name 1)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" 12V_SUPPLY)
-     (Order 0)
-     ("Is No Connect" False)))
-   (pin 999 2
-    (property 
-     (pinname 2)
-     (pintype 4)
-     (Name 2)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" GND)
-     (Order 1)
-     ("Is No Connect" False))))
-  (image "C-0603_4"
-   (property 
-    (sourcelib "E:\\HOME_BOX_HD\\SPHE1506\\SPSTB_1506-144_DEMO_V10.DSN"))
-   (pin 999 1
-    (property 
-     (pinname 1)
-     (pintype 4)
-     (Name 1)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" 12V_SUPPLY)
-     (Order 0)
-     ("Is No Connect" False)))
-   (pin 999 2
-    (property 
-     (pinname 2)
-     (pintype 4)
-     (Name 2)
      ("Swap Id" "-1")
      (Type Passive)
      ("Net Name" GND)
@@ -5777,75 +6120,6 @@
      ("Net Name" MCU_CLK_SE)
      (Order 0)
      ("Is No Connect" False))))
-  (image SY8008_0
-   (property 
-    (sourcelib "E:\\WORK\\DVB\\SUNPLUS\\1507A\\SP07AM15_H03 V1.0.DSN"))
-   (pin 999 4
-    (property 
-     (pinname EN)
-     (pintype 4)
-     (Name EN)
-     (Number 4)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" N17245613)
-     (Order 0)
-     ("Is No Connect" False)))
-   (pin 999 2
-    (property 
-     (pinname GND)
-     (pintype 4)
-     (Name GND)
-     (Number 2)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" GND)
-     (Order 1)
-     ("Is No Connect" False)))
-   (pin 999 6
-    (property 
-     (pinname SW)
-     (pintype 4)
-     (Name SW)
-     (Number 6)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" N17201888)
-     (Order 2)
-     ("Is No Connect" False)))
-   (pin 999 5
-    (property 
-     (pinname IN)
-     (pintype 4)
-     (Name IN)
-     (Number 5)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" 12V_SUPPLY)
-     (Order 3)
-     ("Is No Connect" False)))
-   (pin 999 3
-    (property 
-     (pinname FB)
-     (pintype 4)
-     (Name FB)
-     (Number 3)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" N17202001)
-     (Order 4)
-     ("Is No Connect" False)))
-   (pin 999 1
-    (property 
-     (pinname BST)
-     (pintype 4)
-     (Name BST)
-     (Number 1)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" N17201995)
-     (Order 5)
-     ("Is No Connect" False))))
   (image S32R274_257P
    (property 
     (sourcelib Q:\\ORCADCIS\\SYMBOLS\\FCL_IC_FREESCALE.OLB)
@@ -5949,6 +6223,7 @@
      (Number J4)
      ("Swap Id" "-1")
      (Type Bidirectional)
+     ("Net Name" 5V0_TEST)
      (Order 9)
      ("Is No Connect" True)))
    (pin 999 L1
@@ -5970,6 +6245,7 @@
      (Number K4)
      ("Swap Id" "-1")
      (Type Bidirectional)
+     ("Net Name" 3V3_SW_REG_TEST)
      (Order 11)
      ("Is No Connect" True)))
    (pin 999 L2
@@ -6558,7 +6834,7 @@
      (Number C9)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" N15989049)
+     ("Net Name" N16259313)
      (Order 67)
      ("Is No Connect" False)))
    (pin 999 G17
@@ -6931,9 +7207,8 @@
      (Number A14)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" GPIO[43])
      (Order 22)
-     ("Is No Connect" False)))
+     ("Is No Connect" True)))
    (pin 999 B14
     (property 
      (pinname DSPI2_CS3)
@@ -7060,9 +7335,8 @@
      (Number C14)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" GPIO[123])
      (Order 34)
-     ("Is No Connect" False)))
+     ("Is No Connect" True)))
    (pin 999 D13
     (property 
      (pinname CTE_CTEP7)
@@ -8760,7 +9034,7 @@
      (Number 36)
      ("Swap Id" "-1")
      (Type Bidirectional)
-     ("Net Name" N17444730)
+     ("Net Name" MDIO)
      (Order 12)
      ("Is No Connect" False)))
    (pin 999 17
@@ -9183,32 +9457,6 @@
      ("Net Name" CAN0_SPI_IN)
      (Order 13)
      ("Is No Connect" False))))
-  (image INDUCTOR
-   (property 
-    (sourcelib Q:\\ORCADCIS\\SYMBOLS\\FCL_INDUCTOR.OLB)
-    (CLASS DISCRETE))
-   (pin 999 1
-    (property 
-     (pinname 1)
-     (pintype 4)
-     (Name 1)
-     (Number 1)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" N16702317)
-     (Order 0)
-     ("Is No Connect" False)))
-   (pin 999 2
-    (property 
-     (pinname 2)
-     (pintype 4)
-     (Name 2)
-     (Number 2)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" 3V3_SW_REG)
-     (Order 1)
-     ("Is No Connect" False))))
   (image "MC33901WEF-8P_2"
    (property 
     (sourcelib "C:\\USERS\\DEV\\DESKTOP\\HALL\\333\\SCH-29022_A1.DSN")
@@ -9353,29 +9601,6 @@
      ("Net Name" GND)
      (Order 0)
      ("Is No Connect" False))))
-  (image CAP
-   (property 
-    (sourcelib D:\\ORWIN7\\CAPTURE\\LIBRARY\\DEVICE.OLB))
-   (pin 999 1
-    (property 
-     (pinname 1)
-     (pintype 4)
-     (Name 1)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" 3V3_LR_REG)
-     (Order 0)
-     ("Is No Connect" False)))
-   (pin 999 2
-    (property 
-     (pinname 2)
-     (pintype 4)
-     (Name 2)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" GND)
-     (Order 1)
-     ("Is No Connect" False))))
   (image INDUCTOR_FERRITE_A
    (property 
     (sourcelib Q:\\ORCADCIS\\SYMBOLS\\FCL_INDUCTOR.OLB)
@@ -9402,10 +9627,10 @@
      ("Net Name" N8718337)
      (Order 1)
      ("Is No Connect" False))))
-  (image BEAD
+  (image CONN_HDR_22
    (property 
-    (sourcelib Q:\\ORCADCIS\\SYMBOLS\\FCL_INDUCTOR.OLB)
-    (CLASS DISCRETE))
+    (sourcelib D:\\PROJECTS\\RADAR\\RADAR_OE_EE\\02_HARDWARE_DESIGN\\VA18A010E\\VA18A010E.DSN)
+    (CLASS IO))
    (pin 999 1
     (property 
      (pinname 1)
@@ -9414,7 +9639,7 @@
      (Number 1)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" 1.25V_SMPS)
+     ("Net Name" HSCAN_H)
      (Order 0)
      ("Is No Connect" False)))
    (pin 999 2
@@ -9425,23 +9650,8 @@
      (Number 2)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" N8741821)
+     ("Net Name" HSCAN_L)
      (Order 1)
-     ("Is No Connect" False))))
-  (image CONN_HDR_21
-   (property 
-    (sourcelib D:\\项目\\HALL\\雷达\\VAE1701A01\\VA1701A01E.DSN)
-    (CLASS IO))
-   (pin 999 4
-    (property 
-     (pinname 4)
-     (pintype 4)
-     (Name 4)
-     (Number 4)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" N17072089)
-     (Order 0)
      ("Is No Connect" False)))
    (pin 999 3
     (property 
@@ -9451,85 +9661,41 @@
      (Number 3)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" N17072089)
-     (Order 1)
-     ("Is No Connect" False)))
-   (pin 999 1
-    (property 
-     (pinname 1)
-     (pintype 4)
-     (Name 1)
-     (Number 1)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" VIN)
+     ("Net Name" BI_DA+)
      (Order 2)
      ("Is No Connect" False)))
-   (pin 999 2
+   (pin 999 4
     (property 
-     (pinname 2)
+     (pinname 4)
      (pintype 4)
-     (Name 2)
-     (Number 2)
+     (Name 4)
+     (Number 4)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" "BI_DA-")
+     (Order 3)
+     ("Is No Connect" False)))
+   (pin 999 5
+    (property 
+     (pinname 5)
+     (pintype 4)
+     (Name 5)
+     (Number 5)
      ("Swap Id" "-1")
      (Type Passive)
      ("Net Name" VIN)
-     (Order 3)
-     ("Is No Connect" False)))
-   (pin 999 12
-    (property 
-     (pinname 12)
-     (pintype 4)
-     (Name 12)
-     (Number 12)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" LED_DRV)
      (Order 4)
-     ("Is No Connect" False)))
-   (pin 999 11
+     ("Is No Connect" True)))
+   (pin 999 6
     (property 
-     (pinname 11)
+     (pinname 6)
      (pintype 4)
-     (Name 11)
-     (Number 11)
+     (Name 6)
+     (Number 6)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" N17126039)
+     ("Net Name" VIN)
      (Order 5)
-     ("Is No Connect" False)))
-   (pin 999 10
-    (property 
-     (pinname 10)
-     (pintype 4)
-     (Name 10)
-     (Number 10)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" N17126042)
-     (Order 6)
-     ("Is No Connect" False)))
-   (pin 999 9
-    (property 
-     (pinname 9)
-     (pintype 4)
-     (Name 9)
-     (Number 9)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" HSCAN_H)
-     (Order 7)
-     ("Is No Connect" False)))
-   (pin 999 8
-    (property 
-     (pinname 8)
-     (pintype 4)
-     (Name 8)
-     (Number 8)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" HSCAN_L)
-     (Order 8)
      ("Is No Connect" False)))
    (pin 999 7
     (property 
@@ -9540,29 +9706,41 @@
      ("Swap Id" "-1")
      (Type Passive)
      ("Net Name" IG_EN)
+     (Order 6)
+     ("Is No Connect" False)))
+   (pin 999 8
+    (property 
+     (pinname 8)
+     (pintype 4)
+     (Name 8)
+     (Number 8)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N17516237)
+     (Order 7)
+     ("Is No Connect" False)))
+   (pin 999 9
+    (property 
+     (pinname 9)
+     (pintype 4)
+     (Name 9)
+     (Number 9)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N17514695)
+     (Order 8)
+     ("Is No Connect" False)))
+   (pin 999 10
+    (property 
+     (pinname 10)
+     (pintype 4)
+     (Name 10)
+     (Number 10)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N17514792)
      (Order 9)
-     ("Is No Connect" False)))
-   (pin 999 6
-    (property 
-     (pinname 6)
-     (pintype 4)
-     (Name 6)
-     (Number 6)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" SW_PWR_ON)
-     (Order 10)
-     ("Is No Connect" False)))
-   (pin 999 5
-    (property 
-     (pinname 5)
-     (pintype 4)
-     (Name 5)
-     (Number 5)
-     ("Swap Id" "-1")
-     (Type Passive)
-     (Order 11)
-     ("Is No Connect" True))))
+     ("Is No Connect" False))))
   (image 10u/16V_0
    (property 
     (sourcelib "E:\\HOME_BOX_HD\\SPHE1506\\SPSTB_1506-144_DEMO_V10.DSN"))
@@ -9633,33 +9811,6 @@
      (Type Passive)
      ("Net Name" GND)
      (Order 3)
-     ("Is No Connect" False))))
-  (image R0402
-   (property 
-    (sourcelib "\\\\ALINET\\ZH\\DIV\\SE\\PCB LIB\\ALI LIB VERSION 3.0\\ALI_ORCAD3.0-R.OLB")
-    (Prop "1/16W 5%")
-    (Price 0.005))
-   (pin 999 1
-    (property 
-     (pinname 1)
-     (pintype 4)
-     (Name 1)
-     (Number 1)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" 3V3_LR_REG)
-     (Order 0)
-     ("Is No Connect" False)))
-   (pin 999 2
-    (property 
-     (pinname 2)
-     (pintype 4)
-     (Name 2)
-     (Number 2)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" N17215622)
-     (Order 1)
      ("Is No Connect" False))))
   (image "QTH-030-02-L-D-A_0"
    (property 
@@ -10571,7 +10722,7 @@
      (Name 1)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" IG_EN)
+     ("Net Name" "BI_DA-")
      (Order 0)
      ("Is No Connect" False)))
    (pin 999 2
@@ -11182,8 +11333,8 @@
    (pins
      C67-1 C69-1 C68-1 C71-1 C72-1 C70-1 C50-1 C51-1 C55-1
      C53-1 C60-1 C59-1 C52-1 C58-1 C57-1 C61-1 C54-1 C56-1
-     C118-1 C117-1 C115-1 C116-1 C74-1 C73-1 C99-1 C100-1 C108-1
-     C109-1 C107-1 C110-1 L5-1 L6-1 U5-F6 U5-F8 U5-F10 U5-F12
+     C118-1 C117-1 C115-1 C116-1 C74-1 C73-1 C99-1 C100-1 C106-1
+     C107-1 C105-1 C108-1 L5-1 L6-1 U5-F6 U5-F8 U5-F10 U5-F12
      U5-G6 U5-G7 U5-G8 U5-G9 U5-G10 U5-G11 U5-H6 U5-H8 U5-H12
      U5-K6 U5-K10 U5-K12 U5-L7 U5-L8 U5-L9 U5-L10 U5-L11 U5-M6
      U5-M8 U5-M10 U5-M12 U5-J3 U5-R9 U5-T7 U5-P6 U5-R7 C47-1
@@ -11195,9 +11346,8 @@
      (nettype S))
    (pins
      U2-4 U2-13 C3-1 C6-1 C2-1 U1-4 U1-13 C5-1 C4-1
-     C1-1 U7-10 C157-1 C158-1 C167-1 C165-1 C166-1 U3-5 EC3-1
-     C25-1 C26-1 C23-1 C22-1 EC2-1 U4-5 L16-2 U12-4 U9-4
-     Q9-2 U11-2))
+     C1-1 U7-10 C157-1 C158-1 C167-1 C165-1 C166-1 L16-2 U12-4
+     U9-4 Q9-2 U11-2 C177-1 C178-1 U14-3))
   (net 12V_TEST
     (property 
      (IREF [6]))
@@ -11212,9 +11362,9 @@
     (property 
      (nettype S))
    (pins
-     C106-1 C105-1 C129-1 C131-1 U5-N2 U5-M1 U5-D8 U5-D1 C79-1
-     C132-1 C130-1 C155-1 C156-1 U7-5 L3-2 R11-1 EC1-1 C21-1
-     C24-1 Q10-2))
+     C110-1 C109-1 C129-1 C131-1 U5-N2 U5-M1 U5-D8 U5-D1 C79-1
+     C132-1 C130-1 C155-1 C156-1 U7-5 Q10-2 U13-1 R91-1 C182-1
+     L19-2))
   (net 3V3_SW_REG
     (property 
      (nettype S))
@@ -11223,63 +11373,78 @@
      C98-1 C125-1 C76-1 C77-1 Q1-4 J2-11 U5-L3 U5-N4 U5-A16
      U5-E15 U5-K14 U5-U16 U5-F17 U5-C11 U5-P15 U5-T15 U5-N14 U5-N17
      U5-R8 U5-R12 C127-1 C128-1 C126-1 R20-1 C32-1 C31-1 C29-1
-     C30-1 L1-2 U1-1 C11-1 C9-1 C10-1 R5-1 R1-2 C16-1
-     C124-1 R4-1 C88-1 C90-1 C92-1 C91-1 C87-1 C89-1 C103-1
-     L7-1 U8-5 C160-1 R61-2 R27-2 R28-2 R21-1 Q4-3 Q2-3
+     C30-1 L1-2 U1-1 C11-1 C9-1 C10-1 R4-1 R1-2 C16-1
+     C124-1 R5-1 C88-1 C90-1 C92-1 C91-1 C87-1 C89-1 C103-1
+     L7-1 U8-5 C160-1 R60-2 R27-2 R28-2 R21-1 Q4-3 Q2-3
      U6-9 R33-1 R34-1 R32-1 R30-1 R31-1 R39-1 R40-1 R29-1
-     L8-1))
+     L8-1 R93-1 L19-1))
+  (net 3V3_SW_REG_TEST
+    (property 
+     (IREF [3]))
+   (pins
+     U5-K4 R85-1 R93-2 C185-1))
   (net 4V2_SW_REG
     (property 
      (nettype S))
    (pins
-     J1-1 J1-3 J1-5 J1-7 R3-2 R17-1))
+     J1-1 J1-3 J1-5 J1-7 R3-2 R94-1))
   (net 4V2_SW_REG_MON
     (property 
      (IREF [3]))
    (pins
-     U5-L2 R17-2 R19-1 C34-1))
+     U5-L2 R19-1 R94-2 C186-1))
   (net 5V0_LR_REG
     (property 
      (nettype S))
    (pins
-     C153-1 C154-1 U7-3 L4-2 EC4-1 C28-1 R12-1 C27-1))
+     C153-1 C154-1 U7-3 U13-6 R89-1 L18-2 C180-1 C181-1 C183-1
+     R92-1))
+  (net 5V0_TEST
+    (property 
+     (IREF [3]))
+   (pins
+     U5-J4 R87-1 C184-1 R92-2))
   (net ADC0_AN_0
    (pins
      J1-19 U5-M3))
   (net BI_DA+
+    (property 
+     (IREF [5]))
    (pins
-     C145-2 R42-2))
+     D7-1 JP1-3 C145-2 R42-2))
   (net "BI_DA-"
+    (property 
+     (IREF [5]))
    (pins
-     C146-2 R41-2))
+     D2-1 JP1-4 C146-2 R41-2))
   (net CAN0_EOUT
     (property 
      (IREF [5]))
    (pins
-     U5-A11 U8-1 R61-1))
+     U5-A11 U8-1 R60-1))
   (net CAN0_RXD
     (property 
-     (IREF [5]))
+     (IREF [5,7]))
    (pins
      U5-M17 R53-2 R55-2))
   (net CAN0_SPI_CIP
     (property 
-     (IREF [5]))
+     (IREF [5,7]))
    (pins
      U5-D13 U7-14 TP6-1))
   (net CAN0_SPI_CLK
     (property 
-     (IREF [5]))
+     (IREF [5,7]))
    (pins
      U5-H17 U7-8 TP4-1))
   (net CAN0_SPI_IN
     (property 
-     (IREF [5]))
+     (IREF [5,7]))
    (pins
      U7-11 R22-1 R25-1 TP7-1))
   (net CAN0_SPI_OUT
     (property 
-     (IREF [5]))
+     (IREF [5,7]))
    (pins
      U7-6 R23-1 R26-1 TP5-1))
   (net CAN0_TXD
@@ -11350,6 +11515,9 @@
      (IREF [5]))
    (pins
      J1-26 U5-B16))
+  (net EN
+   (pins
+     U13-4 R83-1))
   (net EN/TXCLK
    (pins
      U5-U12 U6-35))
@@ -11369,10 +11537,10 @@
    (pins
      C67-2 C69-2 C68-2 C71-2 C72-2 C70-2 C50-2 C51-2 C55-2
      C53-2 C60-2 C59-2 C52-2 C58-2 C57-2 C61-2 C54-2 C56-2
-     C118-2 C117-2 C115-2 C116-2 C111-2 C106-2 C105-2 C104-2 C123-2
+     C118-2 C117-2 C115-2 C116-2 C111-2 C110-2 C109-2 C104-2 C123-2
      C122-2 C93-2 C96-2 C94-2 C97-2 C95-2 C98-2 C125-2 C76-2
      C77-2 C74-2 C73-2 C86-2 C85-2 C83-2 C80-2 C99-2 C100-2
-     C108-2 C109-2 C107-2 C110-2 C101-2 D1-1 D1-2 C65-2 C64-2
+     C106-2 C107-2 C105-2 C108-2 C101-2 D1-1 D1-2 C65-2 C64-2
      C129-2 C131-2 C66-2 J2-2 J2-4 J2-6 J2-12 R47-2 J1-2
      J1-4 J1-6 J1-8 J1-9 J1-10 J1-11 J1-13 J1-14 J1-15
      J1-17 J1-18 J1-20 J1-21 J1-24 J1-25 J1-29 J1-34 J1-35
@@ -11388,28 +11556,23 @@
      TP3-1 C79-2 C150-2 C151-2 C102-2 C81-2 C82-2 C78-2 C47-2
      C48-2 C36-2 C35-2 C38-2 C37-2 C32-2 C31-2 C29-2 C30-2
      C40-2 C41-2 C42-2 C39-2 U2-6 U2-7 U2-10 U2-11 U2-18
-     C12-2 C3-2 C15-2 C13-2 C17-2 C6-2 R8-2 C14-2 C2-2
+     C12-2 C3-2 C13-2 C14-2 C17-2 C6-2 R7-2 C15-2 C2-2
      U1-6 U1-7 U1-10 U1-11 U1-18 C11-2 C9-2 C10-2 R6-2
      R9-2 C5-2 C43-2 C46-2 C45-2 C44-2 C4-2 C1-2 C124-2
      DS1-C C132-2 C130-2 C62-2 C63-2 C49-2 C119-2 C120-2 C121-2
      C114-2 C113-2 C112-2 C88-2 C90-2 C92-2 C91-2 C87-2 C89-2
      C103-2 C75-1 C84-2 C155-2 C153-2 C154-2 C156-2 R10-2 U7-2
-     C157-2 C158-2 L13-1 L12-1 R58-1 U8-3 C160-2 C167-2 D7-2
-     D6-2 D5-2 D4-2 D3-2 D2-2 C165-2 C166-2 R16-2 U3-2
-     EC4-2 EC3-2 C28-2 C25-2 C27-2 C26-2 R15-2 C23-2 C22-2
-     EC2-2 EC1-2 C21-2 C24-2 U4-2 C164-2 U10-1 R72-2 U12-1
-     R77-2 C172-2 C171-2 C159-2 U9-1 R65-1 C162-2 Q5-1 R60-1
-     R66-1 C161-2 Q6-2 Q9-1 C133-2 R24-2 TP9-1 C169-2 R68-1
-     C168-2 Q10-1 R73-1 C170-2 Q11-2 ZD1-2 R19-2 C34-2 D8-1
+     C157-2 C158-2 L12-1 R58-1 U8-3 C160-2 C167-2 D4-2 D3-2
+     D7-2 D2-2 D6-2 D5-2 C165-2 C166-2 C164-2 U10-1 R72-2
+     U12-1 R77-2 C172-2 C171-2 C159-2 U9-1 R65-1 C162-2 Q5-1
+     R61-1 R66-1 C161-2 Q6-2 Q9-1 C133-2 R24-2 TP9-1 C169-2
+     R68-1 C168-2 Q10-1 R73-1 C170-2 Q11-2 ZD1-2 R19-2 D8-1
      R57-2 C152-2 Q3-2 R49-2 U6-20 U6-26 U6-15 Y1-4 Y1-2
      C148-2 C149-2 R44-1 R46-2 R45-2 C144-1 C143-1 R43-1 C147-1
      C136-2 C135-2 C137-2 C139-2 C140-2 C141-2 C138-2 C142-2 C134-2
-     U6-37))
-  (net GPIO[123]
-    (property 
-     (IREF [5]))
-   (pins
-     U5-C14))
+     U6-37 L17-1 U13-2 U13-5 U13-7 R83-2 R85-2 R87-2 C177-2
+     C178-2 U14-1 R90-2 C180-2 C181-2 C182-2 C183-2 C184-2 C185-2
+     C186-2))
   (net GPIO[128]
     (property 
      (IREF [5]))
@@ -11420,11 +11583,6 @@
      (IREF [5]))
    (pins
      U5-D14 DS4-1))
-  (net GPIO[43]
-    (property 
-     (IREF [5]))
-   (pins
-     U5-A14))
   (net GPIO[7]
     (property 
      (IREF [5]))
@@ -11437,21 +11595,21 @@
      U5-D15 R25-2 R26-2))
   (net HSCAN_H
    (pins
-     L14-3 R50-1 D4-1 JP1-9))
+     L14-3 D4-1 JP1-1 R78-1))
   (net HSCAN_L
    (pins
-     L14-4 R52-1 D3-1 JP1-8))
+     L14-4 D3-1 JP1-2 R78-2))
   (net IG_EN
    (pins
-     D2-1 C169-1 R71-1 R67-1 JP1-7))
+     D6-1 U12-2 JP1-7))
   (net INH
    (pins
      R59-2 Q3-3 DS8-1))
   (net INTPUT
     (property 
-     (IREF [3]))
+     (IREF [3,7]))
    (pins
-     U2-14 U1-14 R13-1 R14-1 R56-1 Q4-2))
+     U2-14 U1-14 R56-1 Q4-2 U14-5))
   (net INTPUT_1
    (pins
      R75-1 DS5-1))
@@ -11462,7 +11620,7 @@
     (property 
      (IREF [6]))
    (pins
-     U5-L1 R67-2 R68-2 C168-1 Q10-3))
+     U5-L1 R76-2 R77-1 C172-1))
   (net JTAG_JCOMP
    (pins
      J2-14 U5-G17))
@@ -11488,12 +11646,12 @@
      J2-10 U5-J15))
   (net LED_DRV
    (pins
-     D7-1 C159-1 L15-1 Q6-1 JP1-12))
+     C159-1 L15-1 Q6-1 R80-1))
   (net LED_ON/OFF
     (property 
      (IREF [5]))
    (pins
-     U5-M15 Q5-2 R60-2))
+     U5-M15 Q5-2 R61-2))
   (net LED_PWM
     (property 
      (IREF [5]))
@@ -11518,8 +11676,8 @@
      U5-C13 U6-1))
   (net MDIO
    (pins
-     U5-C17))
-  (net N15989049
+     U5-C17 U6-36 R40-2))
+  (net N16259313
    (pins
      R47-1 U5-C9))
   (net N16658378
@@ -11542,10 +11700,10 @@
      U5-A4 U5-B4))
   (net N16698760
    (pins
-     L2-2 R2-2 U2-1 R3-1 C12-1 C18-1 C15-1 C13-1 R7-1))
+     L2-2 R2-2 U2-1 R3-1 C12-1 C18-1 C13-1 C14-1 R8-1))
   (net N16698764
    (pins
-     U2-20 C18-2 R7-2 R10-1))
+     U2-20 C18-2 R8-2 R10-1))
   (net N16698970
    (pins
      L2-1 U2-8 U2-9 U2-21 U2-22 C8-2))
@@ -11554,7 +11712,7 @@
      U2-3 C8-1))
   (net N16699024
    (pins
-     U2-15 R8-1))
+     U2-15 R7-1))
   (net N16699050
    (pins
      U2-2 C17-1))
@@ -11569,13 +11727,13 @@
      U1-15 R6-1))
   (net N16702437
    (pins
-     C14-1 U1-2))
+     C15-1 U1-2))
   (net N16702533
    (pins
-     U1-20 R5-2 R9-1 C16-2))
+     U1-20 R4-2 R9-1 C16-2))
   (net N16741485
    (pins
-     R4-2 DS1-A))
+     R5-2 DS1-A))
   (net N16744297
    (pins
      U5-A1 U5-B1))
@@ -11591,9 +11749,6 @@
   (net N16855453
    (pins
      C85-1 U5-C3))
-  (net N17072089
-   (pins
-     L13-2 L12-2 JP1-4 JP1-3))
   (net N17073730
    (pins
      U7-13 L14-1 TP13-1))
@@ -11606,12 +11761,6 @@
   (net N17125769
    (pins
      U7-7 R59-1))
-  (net N17126039
-   (pins
-     R50-2 D6-1 JP1-11))
-  (net N17126042
-   (pins
-     R52-2 D5-1 JP1-10))
   (net N17160454
    (pins
      U5-J17 DS2-C))
@@ -11624,30 +11773,6 @@
   (net N17160569
    (pins
      DS3-A R28-1))
-  (net N17201888
-   (pins
-     L4-1 U3-6 C20-1))
-  (net N17201995
-   (pins
-     U3-1 C20-2))
-  (net N17202001
-   (pins
-     R16-1 U3-3 R12-2))
-  (net N17215622
-   (pins
-     R11-2 R15-1 U4-3))
-  (net N17215677
-   (pins
-     L3-1 U4-6 C19-1))
-  (net N17215752
-   (pins
-     U4-1 C19-2))
-  (net N172157660
-   (pins
-     U4-4 R13-2))
-  (net N17245613
-   (pins
-     U3-4 R14-2))
   (net N17250209
    (pins
      C163-2 C164-1 TP15-1))
@@ -11669,6 +11794,9 @@
   (net N17259902
    (pins
      U12-3 R74-1 TP18-1))
+  (net N17260214
+   (pins
+     R74-2 R75-2 R76-1 C171-1))
   (net N17267884
    (pins
      U9-5 U9-6))
@@ -11714,9 +11842,6 @@
   (net N17441410
    (pins
      U6-34 R44-2))
-  (net N17444730
-   (pins
-     U6-36 R40-2))
   (net N17445537
    (pins
      U6-2 R39-2 R46-1))
@@ -11762,6 +11887,24 @@
   (net N17455218
    (pins
      L7-2 U6-14 U6-11 U6-7 C138-1 C142-1 C134-1))
+  (net N17514695
+   (pins
+     L12-2 JP1-9))
+  (net N17514792
+   (pins
+     JP1-10 L17-2))
+  (net N17516237
+   (pins
+     D5-1 JP1-8 R79-2 R80-2))
+  (net N17548712
+   (pins
+     L18-1 C179-2 U14-2))
+  (net N17548726
+   (pins
+     C179-1 U14-6))
+  (net N17548728
+   (pins
+     R89-2 U14-4 R90-1))
   (net N8656546
    (pins
      C83-1 U5-G3 C82-1))
@@ -11777,6 +11920,9 @@
   (net N8741821
    (pins
      C65-1 C64-1 C66-1 L6-2 U5-D9))
+  (net PG
+   (pins
+     U13-3 R91-2))
   (net POWER_GD
    (pins
      U1-19 R1-1))
@@ -11837,17 +11983,14 @@
      (IREF [5]))
    (pins
      J1-38 U5-F14))
-  (net SW_INPUT
-   (pins
-     R74-2 R75-2 R76-1 C171-1))
   (net SW_PWR_ON
    (pins
-     U12-2 JP1-6))
+     C169-1 R71-1 R67-1 R79-1))
   (net SW_TEST
     (property 
      (IREF [6]))
    (pins
-     U5-R3 R76-2 R77-1 C172-1))
+     U5-R3 R67-2 R68-2 C168-1 Q10-3))
   (net TEMP
     (property 
      (IREF [5]))
@@ -11855,7 +11998,7 @@
      U5-U2 R21-2 C133-1 R24-1))
   (net VIN
    (pins
-     C163-1 DS9-1 DS9-2 U10-4 D8-2 JP1-1 JP1-2))
+     C163-1 DS9-1 DS9-2 U10-4 D8-2 JP1-5 JP1-6))
   (net "VREG_I-SENSE"
     (property 
      (IREF [3]))

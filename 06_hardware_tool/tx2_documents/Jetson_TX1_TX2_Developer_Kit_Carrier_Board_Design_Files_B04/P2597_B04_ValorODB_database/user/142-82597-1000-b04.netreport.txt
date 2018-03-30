@@ -1,0 +1,43 @@
+Created on Enterprise 3000 / Trilogy 5000 - Netlist Compare Summary.
+
+Version 
+
+FTP Site : valor.com
+WEB Site : http://www.valor.com 
+
+DATE :  10 Mar 2016
+TIME :  15:43:40
+
+
+     MISMATCH SUMMARY REPORT
+     -----------------------
+
+Job  : 142-82597-1000-b04      Job  : 142-82597-1000-b04
+Step : cad                     Step : cad
+Type : CAD                     Type : CURCAD
+
+-----------------------------------------------
+
+ Mismatch Type: shorted
+
+
+ Total : 0
+-----------------------------------------------
+
+ Mismatch Type: broken
+
+
+ Total : 0
+-----------------------------------------------
+
+ Mismatch Type: missing
+
+
+ Total : 0
+-----------------------------------------------
+
+ Mismatch Type: extra
+
+
+ Total : 0
+-----------------------------------------------

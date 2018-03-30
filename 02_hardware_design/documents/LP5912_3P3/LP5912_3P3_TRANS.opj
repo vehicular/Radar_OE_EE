@@ -1,0 +1,179 @@
+(ExpressProject "LP5912_3P3_TRANS"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\lp5912_3p3_trans.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "lp5912_3p3_trans.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (RootChangedForceReNetlist "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (PSPICE_DoNot_Show_WarningDlg "TRUE"))
+  (Folder "Outputs")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lp5912_3p3_trans-pspicefiles\startup\tran.sim"
+        (DisplayName "STARTUP-TRAN")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\lp5912_3p3_trans-pspicefiles\startup\tran.sim"))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\lp5912_3p3_trans.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\lp5912_3p3_trans.lib"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (LP5912_3P3_TRANS
+      (FullPartName "LP5912_3P3_TRANS.Normal")
+      (LibraryName
+         "E:\AA_BHUSHAN\PSPICE_WORK\LDO\LP5912\RELEASE_15JAN\LP5912_10JAN\LP5912_3P3\ACTIVE_WORK_KARMIC\PSPICE\LP5912_3P3_PSPICE_TRANS\LP5912_3P3_TRANS.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (IDC
+      (FullPartName "IDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (ABM2/I
+      (FullPartName "ABM2/I.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ABM.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (ABM1
+      (FullPartName "ABM1.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ABM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (S
+      (FullPartName "S.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (IC1
+      (FullPartName "IC1.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (LP5910_1P8_TRANS
+      (FullPartName "LP5910_1P8_TRANS.Normal")
+      (LibraryName
+         "C:\USERS\X0193905\DESKTOP\LP5910\LP5910_1P8\ACTIVE_WORK_KARMIC\PSPICE\LP5910_1P8_PSPICE_TRANS\LP5910_1P8_TRANS.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (D_D
+      (FullPartName "D_D.Normal")
+      (LibraryName "E:\AA_BHUSHAN\INTERNALLIBRARIES\SB0101_LOGIC\DIODES.OLB")
+      (DeviceIndex "0"))
+    (BUF_DELAY_BASIC_GEN
+      (FullPartName "BUF_DELAY_BASIC_GEN.Normal")
+      (LibraryName "E:\AA_BHUSHAN\INTERNALLIBRARIES\SB0101_LOGIC\GATES_GEN.OLB")
+      (DeviceIndex "0"))
+    (BUF_BASIC_GEN
+      (FullPartName "BUF_BASIC_GEN.Normal")
+      (LibraryName "E:\AA_BHUSHAN\INTERNALLIBRARIES\SB0101_LOGIC\GATES_GEN.OLB")
+      (DeviceIndex "0"))
+    (LP5910-1P5DRV_TRANS
+      (FullPartName "LP5910-1P5DRV_TRANS.Normal")
+      (LibraryName
+         "E:\AA_BHUSHAN\PSPICE_WORK\LDO\LP5910_NEW\LP5910-1P5\ORCAD\LP5910-1P5DRV_TRANS.OLB")
+      (DeviceIndex "0"))
+    (ETABLE
+      (FullPartName "ETABLE.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ABM.OLB")
+      (DeviceIndex "0"))
+    (LP5907_3P2_TRANS
+      (FullPartName "LP5907_3P2_TRANS.Normal")
+      (LibraryName
+         "D:\PSPICE MODELS\LDOS\LP5907_3P2\ACTIVE_WORK_KARMIC\PSPICE\LP5907_3P2_PSPICE_TRANS\LP5907_3P2_TRANS.OLB")
+      (DeviceIndex "0"))
+    (LP5907_3P8_TRANS
+      (FullPartName "LP5907_3P8_TRANS.Normal")
+      (LibraryName
+         "D:\LDO\LP5907_3P8\ACTIVE_WORK_KARMIC\PSPICE\LP5907_3P8_PSPICE_TRANS\LP5907_3P8_TRANS.OLB")
+      (DeviceIndex "0"))
+    (LP5900_1P5_TRANS
+      (FullPartName "LP5900_1P5_TRANS.Normal")
+      (LibraryName
+         "D:\LDO\LP5900_1P5\ACTIVE_WORK_KARMIC\PSPICE\LP5900_1P5_PSPICE_TRANS\LP5900_1P5_TRANS.OLB")
+      (DeviceIndex "0"))
+    (LP38692_3P3_TRANS
+      (FullPartName "LP38692_3P3_TRANS.Normal")
+      (LibraryName
+         "D:\LDO\LP38692\LP38692_3P3\ACTIVE_WORK_KARMIC\PSPICE\LP38692_3P3_PSPICE_TRANS\LP38692_3P3_TRANS.OLB")
+      (DeviceIndex "0"))
+    (D_D1
+      (FullPartName "D_D1.Normal")
+      (LibraryName "E:\D DRIVE\INTERNALLIBRARIES\SB0204_DIODES\DIODES.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "Administrator")
+  (LastUsedLibraryBrowseDirectory
+     "E:\AA_Bhushan\InternalLibraries\SB0102_COMPARATORS")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "d:\projects\radar\radar_oe_ee\02_hardware_design\documents\lp5912_3p3\lp5912_3p3_trans.dsn")
+      (Path "Design Resources"
+         "d:\projects\radar\radar_oe_ee\02_hardware_design\documents\lp5912_3p3\lp5912_3p3_trans.dsn"
+         "STARTUP")
+      (Select "Design Resources"
+         "d:\projects\radar\radar_oe_ee\02_hardware_design\documents\lp5912_3p3\lp5912_3p3_trans.dsn"
+         "STARTUP" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 188"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 25 1586 25 566")
+        (Scroll "-257 0")
+        (Zoom "103")
+        (Occurrence "/"))
+      (Path
+         "D:\PROJECTS\RADAR\RADAR_OE_EE\02_HARDWARE_DESIGN\DOCUMENTS\LP5912_3P3\LP5912_3P3_TRANS.DSN")
+      (Schematic "STARTUP")
+      (Page "PAGE1"))))

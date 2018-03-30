@@ -26,12 +26,12 @@
     (width_End "80")
     (Netlist_TAB "8")
     (OTHER_Part_Value "{Value}")
-    (OTHER_Netlist_File "tt.asc")
+    (OTHER_Netlist_File "C:\Users\Administrator\Desktop\VV.asc")
     (OTHER_Netlist_File2 "VA18A010E.CMP")
     (OTHER_View_Output "FALSE")
     (OTHER_View_Output2 "FALSE")
     (OTHER_Formatter "orpads2k.dll")
-    (OTHER_PCB_Footprint "{PCB Footprint}")
+    (OTHER_PCB_Footprint "{PCB Footprint},{Value}")
     (OTHER_Switch0 "FALSE")
     (OTHER_Switch1 "FALSE")
     (OTHER_Switch2 "FALSE")
@@ -46,6 +46,8 @@
     (File ".\tt.asc"
       (Type "Report"))
     (File ".\va18a010e.csv"
+      (Type "Report"))
+    (File "c:\users\administrator\desktop\vv.asc"
       (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
@@ -58,7 +60,8 @@
       (Path "Design Resources" ".\va18a010e.dsn")
       (Path "Design Resources" ".\va18a010e.dsn" "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources" ".\va18a010e.dsn" "SCHEMATIC1" "02 - Notes"))
+      (Select "Design Resources" ".\va18a010e.dsn" "SCHEMATIC1"
+         "01 - TITLE, TOC & REV"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -68,20 +71,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -30 50 1611 50 591")
-        (Scroll "-395 -7")
+        (Placement "44 0 1 -1 -1 -8 -30 150 1711 150 691")
+        (Scroll "-262 0")
         (Zoom "49")
-        (Occurrence "/"))
-      (Path
-         "D:\PROJECTS\RADAR\RADAR_OE_EE\02_HARDWARE_DESIGN\VA18A010E\VA18A010E.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "01 - TITLE, TOC & REV"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 125 1686 125 666")
-        (Scroll "-251 0")
-        (Zoom "50")
         (Occurrence "/"))
       (Path
          "D:\PROJECTS\RADAR\RADAR_OE_EE\02_HARDWARE_DESIGN\VA18A010E\VA18A010E.DSN")
@@ -90,13 +82,24 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 150 1711 150 691")
-        (Scroll "100 366")
-        (Zoom "98")
+        (Placement "44 2 3 -1 -1 -8 -30 50 1611 50 591")
+        (Scroll "1771 311")
+        (Zoom "196")
         (Occurrence "/"))
       (Path
          "D:\PROJECTS\RADAR\RADAR_OE_EE\02_HARDWARE_DESIGN\VA18A010E\VA18A010E.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "02 - Notes")))
+      (Page "01 - TITLE, TOC & REV"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 100 1736 100 508")
+        (Scroll "1134 1900")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "D:\PROJECTS\RADAR\RADAR_OE_EE\02_HARDWARE_DESIGN\VA18A010E\VA18A010E.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "07 - CAN PHY")))
   (ISPCBBASICLICENSE "false")
   (MPSSessionName "Administrator"))

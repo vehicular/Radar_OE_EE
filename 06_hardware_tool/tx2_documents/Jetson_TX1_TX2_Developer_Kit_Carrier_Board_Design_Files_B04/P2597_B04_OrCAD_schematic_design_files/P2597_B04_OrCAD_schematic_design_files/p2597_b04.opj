@@ -1,0 +1,435 @@
+(ExpressProject ""
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\p2597_b04.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (Netlist_TAB "8")
+    (OTHER_Part_Value "{DEVICE_TYPENAME}")
+    (OTHER_Netlist_File
+       "E:\Tegra\Job\SingleTask\0_DesignReview\P2597_B04\diff\p2597_B04-orcad.net")
+    (OTHER_Netlist_File2 "P2597_B04.CMP")
+    (OTHER_View_Output "FALSE")
+    (OTHER_View_Output2 "FALSE")
+    (OTHER_Formatter "orTelesis.dll")
+    (OTHER_PCB_Footprint "{PCB Footprint}")
+    (OTHER_Switch0 "FALSE")
+    (OTHER_Switch1 "FALSE")
+    (OTHER_Switch2 "FALSE")
+    (OTHER_Switch3 "FALSE")
+    (OTHER_Switch4 "FALSE")
+    (OTHER_Switch5 "FALSE")
+    (OTHER_Switch6 "FALSE")
+    (EXPORT_Scope "0")
+    (EXPORT_Contents "0")
+    (EXPORT_File_Name
+       "C:\zz_E\Tegra\Job\SingleTask\0_DesignReview\P2597_B04\P2597_B04_Concept_schematic_design_files\bom_sync\P2597_B04_export.EXP"))
+  (Folder "Outputs"
+    (File "..\diff\p2597_b04-orcad.net"
+      (Type "Report"))
+    (File
+       "..\p2597_b04_concept_schematic_design_files\bom_sync\p2597_b04_export.exp"
+      (Type "Report")))
+  (Folder "Translator"
+    (File ".\p2597_b04.log"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\p2597_b04.dsn")
+      (Path "Design Resources" ".\p2597_b04.dsn" "P2597_B04")
+      (Path "Outputs")
+      (Select "Design Resources" ".\p2597_b04.dsn" "P2597_B04"
+         "17_DSI Connector"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 425"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 50 1611 50 591")
+        (Scroll "1482 795")
+        (Zoom "192")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "06_IO connector 3_3"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 75 1636 75 616")
+        (Scroll "-139 0")
+        (Zoom "50")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "01_Table of Contents"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 100 1661 100 641")
+        (Scroll "346 380")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "02_Block Diagram"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 125 1686 125 666")
+        (Scroll "-164 0")
+        (Zoom "48")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "03_Power Tree"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 150 1711 150 691")
+        (Scroll "-139 16")
+        (Zoom "50")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "04_IO connector 1_3"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 175 1736 175 716")
+        (Scroll "-139 0")
+        (Zoom "50")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "05_IO connector 2_3"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 200 1761 200 741")
+        (Scroll "-164 0")
+        (Zoom "48")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "07_BLANK"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 225 1786 225 766")
+        (Scroll "681 190")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "08_USB3.0 type A and USB2.0 m"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 250 1811 250 791")
+        (Scroll "-139 16")
+        (Zoom "50")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "09_PCIe x4 Connector"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 1561 0 541")
+        (Scroll "892 3380")
+        (Zoom "400")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "10_M.2 KEY E"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 25 1586 25 566")
+        (Scroll "0 260")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "11_SDcard Slot"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 50 1611 50 591")
+        (Scroll "-139 16")
+        (Zoom "50")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "12_SATA"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 75 1636 75 616")
+        (Scroll "691 430")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "13_Gigabit Ethernet"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 100 1661 100 641")
+        (Scroll "691 500")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "14_HDMI"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 125 1686 125 666")
+        (Scroll "2088 660")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "15_Serial port and JTAG"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 150 1711 150 691")
+        (Scroll "2280 240")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "16_IO Expansion Connector"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 175 1736 175 716")
+        (Scroll "-297 -3")
+        (Zoom "48")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "17_DSI Connector"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 200 1761 200 741")
+        (Scroll "-139 0")
+        (Zoom "50")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "18_CSI Connector"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 225 1786 225 766")
+        (Scroll "-164 0")
+        (Zoom "48")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "19_BLANK"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 250 1811 250 791")
+        (Scroll "-164 0")
+        (Zoom "48")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "20_BLANK"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 1561 0 541")
+        (Scroll "1482 1467")
+        (Zoom "192")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "21_GPIO Expanders"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 50 1611 50 591")
+        (Scroll "346 801")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "22_FAN AND DEBUG"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 75 1636 75 616")
+        (Scroll "1592 970")
+        (Zoom "192")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "23_12V BOOST"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 100 1661 100 641")
+        (Scroll "296 372")
+        (Zoom "96")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "24_EEPROM"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 125 1686 125 666")
+        (Scroll "1482 992")
+        (Zoom "192")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "25_Supervisor"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 150 1711 150 691")
+        (Scroll "-164 0")
+        (Zoom "48")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "26_BLANK"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 175 1736 175 716")
+        (Scroll "-139 0")
+        (Zoom "50")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "27_DC Jack"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 200 1761 200 741")
+        (Scroll "-139 16")
+        (Zoom "50")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "28_5V & 3V3 Vregs"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 225 1786 225 766")
+        (Scroll "346 190")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "29_3V3 SLP AND 1.8V Vregs"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 250 1811 250 791")
+        (Scroll "73 1862")
+        (Zoom "192")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "30_Rail Discharge"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 1561 0 541")
+        (Scroll "-139 16")
+        (Zoom "50")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "31_Power Monitor I"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 25 1586 25 566")
+        (Scroll "1051 860")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "32_Power Monitor II"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 50 1611 50 591")
+        (Scroll "-139 16")
+        (Zoom "50")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "33_Buttons and Mechanical"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 75 1636 75 616")
+        (Scroll "-139 0")
+        (Zoom "50")
+        (Occurrence "/"))
+      (Path
+         "D:\项目\TX2_DOCUMENTS\JETSON_TX1_TX2_DEVELOPER_KIT_CARRIER_BOARD_DESIGN_FILES_B04\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04_ORCAD_SCHEMATIC_DESIGN_FILES\P2597_B04.DSN")
+      (Schematic "P2597_B04")
+      (Page "34_REVISION HISTORY")))
+  (Doc
+    (Type "COrCapturePMDoc")
+    (Frame
+      (Placement "44 2 3 -1 -1 -4 -23 0 200 0 423"))
+    (Tab 0))
+  (MPSSessionName "Administrator")
+  (ISPCBBASICLICENSE "false"))

@@ -1,0 +1,77 @@
+# 10 Mar 2016 03:43 PM
+#
+CNSA_NET_TYPE_PHYSICAL_PARAMS {
+    constr_area = *
+    net_type = *
+    layers = *
+    min_line_width = 0.000000
+    min_neck_width = 0.000000
+    max_line_length = 0.000000
+}
+
+NET_ELECTRICAL_PARAMS {
+    ecset_name = SDMMC3-D
+    dpair_prim_gap = 0.000000
+    dpair_line_width = 0.000000
+    dpair_neck_gap = 0.000000
+    dpair_neck_width = 0.000000
+    dpair_coupled_tol_min = 0.000000
+    dpair_coupled_tol_pl = 0.000000
+    dpair_minimum_spacing = 0.000000
+    dpair_gather_control = 0.000000
+    dpair_max_uncoupled_len = 0.000000
+    dpair_phase_control = 0.000000
+    dpair_phase_tolerance_min = 0.000000
+    dpair_phase_tolerance_pl = 0.000000
+}
+
+NET_ECSET_ENTRY {
+    net_name = SDIO_CMD
+    ecset_name = SDMMC3-D
+}
+
+NET_ECSET_ENTRY {
+    net_name = SDIO_CMD_R
+    ecset_name = SDMMC3-D
+}
+
+NET_ECSET_ENTRY {
+    net_name = SDIO_D0
+    ecset_name = SDMMC3-D
+}
+
+NET_ECSET_ENTRY {
+    net_name = SDIO_D1
+    ecset_name = SDMMC3-D
+}
+
+NET_ECSET_ENTRY {
+    net_name = SDIO_D2
+    ecset_name = SDMMC3-D
+}
+
+NET_ECSET_ENTRY {
+    net_name = SDIO_D3
+    ecset_name = SDMMC3-D
+}
+
+NET_ECSET_ENTRY {
+    net_name = SDIO_DAT0_R
+    ecset_name = SDMMC3-D
+}
+
+NET_ECSET_ENTRY {
+    net_name = SDIO_DAT1_R
+    ecset_name = SDMMC3-D
+}
+
+NET_ECSET_ENTRY {
+    net_name = SDIO_DAT2_R
+    ecset_name = SDMMC3-D
+}
+
+NET_ECSET_ENTRY {
+    net_name = SDIO_DAT3_R
+    ecset_name = SDMMC3-D
+}
+

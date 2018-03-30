@@ -15,10 +15,23 @@
       (Path "Design Resources")
       (Path "Design Resources" ".\va1701a01e.dsn")
       (Path "Design Resources" ".\va1701a01e.dsn" "SCHEMATIC1")
-      (Select "Design Resources" ".\va1701a01e.dsn"))
+      (Select "Design Resources" ".\va1701a01e.dsn" "SCHEMATIC1" "07 - CAN PHY"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 392"))
-      (Tab 0))))
+        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 392"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 25 1586 25 566")
+        (Scroll "231 730")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\PROJECTS\RADAR\RADAR_OE_EE\02_HARDWARE_DESIGN\VAE1701A01\VA1701A01E.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "07 - CAN PHY")))
+  (MPSSessionName "Administrator")
+  (PartMRUSelector))

@@ -1,0 +1,22 @@
+#
+#Num Features
+#
+F 1
+
+#
+#Units
+#
+U MM
+
+#
+#Layer features
+#
+S P 0
+OB -0.084 -0.325 I
+OS -0.225 -0.325
+OS -0.225 0.325
+OS 0.225 0.325
+OS 0.225 -0.016
+OS -0.084 -0.325
+OE
+SE
