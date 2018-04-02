@@ -1,0 +1,79 @@
+(ExpressProject "LMZM33603_TRANS"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\lmzm33603rlr_trans.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\LMZM33603_trans.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (RootChangedForceReNetlist "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lmzm33603_trans-pspicefiles\startup\trans.sim"
+        (DisplayName "Startup-trans")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lmzm33603_trans-pspicefiles\steady_state\trans.sim"
+        (DisplayName "Steady_State-trans")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lmzm33603_trans-pspicefiles\ibb_steady_state\trans.sim"
+        (DisplayName "IBB_Steady_State-trans")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lmzm33603_trans-pspicefiles\ibb_startup\trans.sim"
+        (DisplayName "IBB_Startup-trans")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\lmzm33603_trans-pspicefiles\startup\trans.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\LMZM33603_trans.lib"
+        (Type "PSpiceLibrary")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "d:\projects\radar\radar_oe_ee\02_hardware_design\documents\lmzm33603_pspice_trans\LMZM33603_trans.dsn")
+      (Path "Design Resources"
+         "d:\projects\radar\radar_oe_ee\02_hardware_design\documents\lmzm33603_pspice_trans\LMZM33603_trans.dsn"
+         "Startup")
+      (Path "Design Resources"
+         "d:\projects\radar\radar_oe_ee\02_hardware_design\documents\lmzm33603_pspice_trans\LMZM33603_trans.dsn"
+         "IBB_Startup")
+      (Path "Design Resources"
+         "d:\projects\radar\radar_oe_ee\02_hardware_design\documents\lmzm33603_pspice_trans\LMZM33603_trans.dsn"
+         "IBB_Steady_State")
+      (Path "Design Resources"
+         "d:\projects\radar\radar_oe_ee\02_hardware_design\documents\lmzm33603_pspice_trans\LMZM33603_trans.dsn"
+         "Steady_State")
+      (Path "Design Resources"
+         "d:\projects\radar\radar_oe_ee\02_hardware_design\documents\lmzm33603_pspice_trans\LMZM33603_trans.dsn"
+         "Design Cache")
+      (Select "Design Resources"
+         "d:\projects\radar\radar_oe_ee\02_hardware_design\documents\lmzm33603_pspice_trans\LMZM33603_trans.dsn"
+         "Startup" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 303 0 386"))
+      (Tab 0)))
+  (MPSSessionName "Administrator")
+  (PartMRUSelector
+    (LMZM33603RLR_TRANS
+      (FullPartName "LMZM33603RLRR.Normal")
+      (LibraryName
+         "C:\ELABTRANS_WS\ELABTRANS_DS\PART_NUMBERS\LMZM33603\RELEASE_SANKALP\PSPICE\LMZM33603_PSPICE_TRANS\LMZM33603RLR_TRANS.OLB")
+      (DeviceIndex "0"))))
